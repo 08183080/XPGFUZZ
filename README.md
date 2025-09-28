@@ -35,7 +35,7 @@ XPGFUZZ/
 ├── analyze.sh: 分析脚本
 ├── benchmark: ProfuzzBench的修改版本，仅包含基于文本的协议
 ├── clean.sh: 清理脚本
-├── ChatAFL: ChatAFL的源代码，包含论文中提出的所有策略
+├── ChatAFL: chatafl的代码
 ├── deps.sh: 安装依赖的脚本，执行时会要求输入密码
 ├── README: 本文件
 ├── run.sh: 在目标上运行模糊测试器并收集数据的执行脚本
@@ -49,7 +49,7 @@ XPGFUZZ/
         │   ├── input_seeds/: 输入种子文件目录
         │   └── output_results/: 变异结果输出目录
         ├── chroma_db_protocols/: ChromaDB向量数据库存储
-        ├── protocol_deepwiiki/: 协议深度文档知识库
+        ├── protocol_deepwiiki/: 协议deepwiki文档知识库
         ├── in-*/: 各协议的原始种子文件目录
         └── *.dict: 各协议的字典文件
 ```
@@ -126,7 +126,7 @@ python finegrained_mutator.py
 
 XPGfuzz集成了丰富的协议知识库：
 - **ChromaDB向量数据库**: 存储协议文档的向量表示
-- **DeepWiki知识库**: 包含Exim、ProFTPD、Kamailio、Live555等协议的深度文档
+- **DeepWiki知识库**: 包含Exim、ProFTPD、Kamailio、Live555等协议的deepwiki文档
 
 ### 4. 支持的协议
 

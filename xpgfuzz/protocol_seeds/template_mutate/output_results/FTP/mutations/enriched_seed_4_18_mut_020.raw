@@ -1,0 +1,13 @@
+USER fuzzing_test
+PASS fuzzing
+SYST
+CWD /home/fuzzing
+MKD todeletenow
+XMKD todeletetoo
+LIST
+CWD todeletenow
+APPE testfile.txt
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

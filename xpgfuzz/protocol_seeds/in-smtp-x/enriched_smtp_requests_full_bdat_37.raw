@@ -1,0 +1,9 @@
+EHLO localhost
+NOOP
+MAIL FROM:<ubuntu@ubuntu>
+CHUNKING
+RCPT TO:<ubuntu@ubuntu>
+BDAT 10 LAST
+NOOP
+BDAT 5 LAST
+QUIT

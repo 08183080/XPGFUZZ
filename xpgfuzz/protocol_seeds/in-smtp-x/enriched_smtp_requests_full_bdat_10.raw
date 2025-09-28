@@ -1,0 +1,9 @@
+EHLO localhost
+STARTTLS
+EHLO localhost
+MAIL FROM:<ubuntu@ubuntu> RET=HDRS ENVID=QQ314159
+RCPT TO:<ubuntu@ubuntu> NOTIFY=SUCCESS,FAILURE ORCPT=rfc822;ubuntu@ubuntu
+BDAT 10 LAST
+.
+BDAT 5 LAST
+QUIT

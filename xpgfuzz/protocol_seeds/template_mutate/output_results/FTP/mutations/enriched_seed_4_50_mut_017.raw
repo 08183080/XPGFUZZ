@@ -1,0 +1,12 @@
+AUTH TLS
+USER fuzzing
+PASS undefined
+PWD
+SYST
+MKD todeletenow
+XMKD todeletetoo
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

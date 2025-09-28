@@ -1,0 +1,16 @@
+USER ubuntu
+PASS ubuntu
+STAT
+CWD /home/ubuntu
+PORT 127,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+LIST
+MLST /
+CWD /tmp
+STOU uniquefile.txt
+STAT
+LIST
+NLST
+CWD /downloads
+MLSD /
+QUIT

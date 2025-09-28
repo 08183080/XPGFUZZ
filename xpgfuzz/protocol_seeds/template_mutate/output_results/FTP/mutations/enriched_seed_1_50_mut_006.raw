@@ -1,0 +1,14 @@
+USER fuzzingfuzzing
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+EPRT |1|192.168.1.1|21|
+PWD
+FEAT
+NOOP
+HELP
+STAT
+STRU
+QUIT

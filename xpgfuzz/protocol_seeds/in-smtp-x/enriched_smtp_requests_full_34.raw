@@ -1,0 +1,22 @@
+EHLO localhost
+MAIL FROM:<ubuntu@ubuntu>
+RCPT TO:<ubuntu@ubuntu>
+DATA
+abc
+.
+QUIT
+EHLO localhost
+MAIL FROM:<test@example.com>
+RCPT TO:<test@example.com>
+DATA
+This is a test email.
+.
+CHUNKING
+PIPELINING
+EHLO localhost
+MAIL FROM:<info@example.com>
+RCPT TO:<info@example.com>
+DATA
+Sample chunked data
+.
+QUIT

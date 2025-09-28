@@ -1,0 +1,16 @@
+USER fuzzing
+PASS fuzzing
+STAT
+CDUP
+PORT 127,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+RETR testfile.txt
+LIST
+MLST /
+CDUP
+STAT
+LIST
+NLST
+MLSD /
+RETR anotherfile.txt
+QUIT

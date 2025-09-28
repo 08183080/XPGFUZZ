@@ -1,0 +1,12 @@
+USER fuzzing
+PASS fuzzing
+SYST
+SITE HELP
+MKD todeletenow
+XMKD todeletetoo
+LIST
+STOR C:\Windows\system32\kernel32.dll
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

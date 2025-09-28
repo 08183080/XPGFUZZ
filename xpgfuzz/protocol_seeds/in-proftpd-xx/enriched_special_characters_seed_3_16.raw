@@ -1,0 +1,20 @@
+USER ubuntu
+PASS ubuntu
+DELE /~!@#$%^&*()_+`={}[]|\;':"<>?,./
+STOU temp_file.txt
+MIC
+STAT
+PORT 127,0,0,1,14,178
+EPRT |2|0:0:0:0:0:0:0:0|1025|
+LIST
+MLST /
+STAT
+LIST
+DELE extremely_long_filename_extremely_long_filename_extremely_long_filename_extremely_long_filename_extremely_long_filename.txt
+NLST
+MLSD /
+STOU anotherfile_123.txt
+MIC
+DELE   whitespace.txt
+STOU test_file.txt
+QUIT

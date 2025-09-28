@@ -1,0 +1,13 @@
+USER fuzzing
+PASS f
+SYST
+MKD todeletenow
+XMKD todeletetoo
+APPE newfile.txt
+LIST
+RNFR todeletenow
+RNTO newname
+RMD newname
+XRMD todeletetoo
+LIST
+QUIT

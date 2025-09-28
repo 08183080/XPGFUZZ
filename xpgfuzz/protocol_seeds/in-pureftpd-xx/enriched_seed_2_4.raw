@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+MKD test
+CWD test
+PWD
+STOU testfile.txt
+SITE CHMOD 755 testfile.txt
+XMKD another_test
+XCWD another_test
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

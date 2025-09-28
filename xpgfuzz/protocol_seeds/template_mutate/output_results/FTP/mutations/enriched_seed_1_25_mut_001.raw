@@ -1,0 +1,14 @@
+USER ' OR 1=1 --
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+REST 0
+SIZE testfile.txt
+NOOP
+HELP
+STAT
+STRU
+QUIT

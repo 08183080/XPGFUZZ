@@ -1,0 +1,15 @@
+USER fuzzing
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+CCC
+RNFR oldfile.txt
+RNTO newfile.txt
+QUIT

@@ -1,0 +1,161 @@
+# =========================================
+# RTSP/Live555 Super Dictionary (Fuzzing)
+# Layered: Keywords -> Combos -> Edge Cases
+# =========================================
+
+# -----------------------
+# Layer 1: Base Keywords
+# -----------------------
+
+# ---- Protocol Versions ----
+"RTSP/1.0"
+"HTTP/1.0"
+
+# ---- RTSP Methods ----
+"OPTIONS"
+"DESCRIBE"
+"ANNOUNCE"
+"SETUP"
+"PLAY"
+"PAUSE"
+"RECORD"
+"TEARDOWN"
+"SET_PARAMETER"
+"GET_PARAMETER"
+"REGISTER"
+"DEREGISTER"
+"GET"
+"POST"
+
+# ---- Status Codes ----
+"200 OK"
+"301 Moved Permanently"
+"400 Bad Request"
+"401 Unauthorized"
+"404 Not Found"
+"405 Method Not Allowed"
+"454 Session Not Found"
+"461 Unsupported Transport"
+
+# ---- Core Headers ----
+"CSeq:"
+"Session:"
+"Transport:"
+"Content-Type:"
+"Content-Length:"
+"Content-Base:"
+"Range:"
+"Scale:"
+"User-Agent:"
+"Accept:"
+"Allow:"
+"Location:"
+"x-sessioncookie:"
+"Cache-Control:"
+"Pragma:"
+
+# ---- Content Types ----
+"application/sdp"
+"application/x-rtsp-tunnelled"
+
+# ---- Transport Protocols ----
+"RTP/AVP"
+"RTP/SAVP"
+"RTP/AVP/TCP"
+"RAW/RAW/UDP"
+
+# ---- Transport Modes ----
+"unicast"
+"multicast"
+"interleaved"
+"client_port="
+"server_port="
+
+# ---- Time Ranges ----
+"npt=0-"
+"npt=0-9999999"
+"clock=19961108T142300Z"
+
+# ---- URL Prefix ----
+"rtsp://"
+"rtsps://"
+"rtsp://:"
+"rtsp://@"
+"rtsp://127.0.0.1/"
+"rtsp://[::1]/"
+
+# -----------------------
+# Layer 2: Combos
+# -----------------------
+
+# ---- Request Line Combos ----
+"OPTIONS rtsp://127.0.0.1/ RTSP/1.0\r\n"
+"DESCRIBE rtsp://127.0.0.1/test.sdp RTSP/1.0\r\n"
+"ANNOUNCE rtsp://127.0.0.1/ RTSP/1.0\r\n"
+"SETUP rtsp://127.0.0.1/trackID=1 RTSP/1.0\r\n"
+"PLAY rtsp://127.0.0.1/ RTSP/1.0\r\n"
+"PAUSE rtsp://127.0.0.1/ RTSP/1.0\r\n"
+"RECORD rtsp://127.0.0.1/ RTSP/1.0\r\n"
+"TEARDOWN rtsp://127.0.0.1/ RTSP/1.0\r\n"
+"SET_PARAMETER rtsp://127.0.0.1/ RTSP/1.0\r\n"
+"GET_PARAMETER rtsp://127.0.0.1/ RTSP/1.0\r\n"
+
+# ---- Required Headers ----
+"CSeq: 1\r\n"
+"CSeq: 999999\r\n"
+"Session: 12345678\r\n"
+"Session: deadbeef\r\n"
+
+# ---- Transport Header Variants ----
+"Transport: RTP/AVP;unicast;client_port=8000-8001\r\n"
+"Transport: RTP/AVP/TCP;interleaved=0-1\r\n"
+"Transport: RTP/SAVP;multicast;ttl=127;port=5004-5005\r\n"
+"Transport: RAW/RAW/UDP;unicast;client_port=10000-10001\r\n"
+
+# ---- Range and Scale ----
+"Range: npt=0-20\r\n"
+"Range: clock=19961108T142300Z-19961108T150000Z\r\n"
+"Scale: 0.5\r\n"
+"Scale: 2.0\r\n"
+
+# ---- Content Headers ----
+"Content-Type: application/sdp\r\n"
+"Content-Type: application/x-rtsp-tunnelled\r\n"
+"Content-Length: 128\r\n"
+"Content-Length: 999999999\r\n"
+
+# ---- Auth / Misc ----
+"User-Agent: Live555-Client/1.0\r\n"
+"Accept: application/sdp\r\n"
+"Allow: OPTIONS, DESCRIBE, SETUP, PLAY, PAUSE, TEARDOWN\r\n"
+"Location: rtsp://evil.com/hijack\r\n"
+"x-sessioncookie: abcdef123456\r\n"
+"Cache-Control: no-cache\r\n"
+"Pragma: no-cache\r\n"
+
+# ---- Status Lines ----
+"RTSP/1.0 200 OK\r\n"
+"RTSP/1.0 400 Bad Request\r\n"
+"RTSP/1.0 401 Unauthorized\r\n"
+"RTSP/1.0 404 Stream Not Found\r\n"
+"RTSP/1.0 454 Session Not Found\r\n"
+"RTSP/1.0 461 Unsupported Transport\r\n"
+
+# -----------------------
+# Layer 3: Edge Cases
+# -----------------------
+
+# ---- Malformed Lines ----
+"OPTIONS \r\n"
+"DESCRIBE rtsp:// RTSP/1.0\r\n"
+"SETUP rtsp:/// RTSP/1.0\r\n"
+"PLAY rtsps://127.0.0.1/ RTSP/1.0\r\n"
+"TEARDOWN ftp://127.0.0.1/ RTSP/1.0\r\n"
+
+# ---- Overflow / Weird Strings ----
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\r\n"
+"%%%%%%%INVALID%%%%%%%\r\n"
+"../../../../etc/passwd\r\n"
+"//"
+"\\r\\n\\r\\n"
+""

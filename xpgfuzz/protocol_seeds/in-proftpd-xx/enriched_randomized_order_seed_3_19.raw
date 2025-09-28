@@ -1,0 +1,28 @@
+USER ubuntu
+PASS ubuntu
+FEAT
+ADAT ████████████████████████████████████████████
+XPWD
+STAT
+PORT 127,0,0,1,255,255
+EPRT |2|::1|1025|
+LIST
+MLST /../../../../../../../../../../etc/passwd
+STAT
+LIST
+NLST
+MLSD /    /    /
+QUIT
+FEAT
+ADAT ████
+XPWD
+PORT 127,0,0,1,14,178
+LIST
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+LIST
+STAT
+ADAT ██████████████████████████
+XPWD
+NLST
+MLSD /
+QUIT

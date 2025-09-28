@@ -1,0 +1,17 @@
+USER ubuntu
+PASS ubuntu
+SYST
+CWD /var/ftp/@@@@@@
+MFF modify;UNIX.group=root; /long-directory-name-that-is-unusually-large-1234567890-abcdefghijklmnopqrstuvwxyz
+SITE CHMOD 755 /testdirectory
+MKD todeletenow
+XMKD todeletetoo
+LIST
+CWD strange   whitespace
+MFF create; /newfile.txt
+SITE EXEC /cmd
+RMD todeletenow
+XRMD todeletetoo
+LIST
+SITE MSG Log message with special characters: äöüß¿¡
+QUIT

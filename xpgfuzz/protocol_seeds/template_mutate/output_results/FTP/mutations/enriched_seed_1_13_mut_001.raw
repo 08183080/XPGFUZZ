@@ -1,0 +1,14 @@
+USER fuzzingfuzzing
+PASS fuzzing
+SYST
+ACCT
+PWD
+EPSV
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+QUIT

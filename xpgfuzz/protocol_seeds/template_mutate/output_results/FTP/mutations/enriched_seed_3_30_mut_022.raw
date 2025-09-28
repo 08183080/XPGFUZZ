@@ -1,0 +1,15 @@
+USER fuzzing
+PASS fuzzing
+STAT
+PORT null,0,0,1,14,178
+EPRT |2|0:0:0:0:0:0:0:0|1025|
+MKD new_directory
+LIST
+MLST /
+APPE newfile.txt
+STAT
+LIST
+NLST
+MLSD /
+MKD another_directory
+QUIT

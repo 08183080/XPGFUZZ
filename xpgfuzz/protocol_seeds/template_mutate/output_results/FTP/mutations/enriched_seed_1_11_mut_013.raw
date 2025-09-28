@@ -1,0 +1,14 @@
+USER fuzzing
+PASS ../../../../../../../../../../
+SYST
+ACCT
+CWD /home/fuzzing
+SITE TIME
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+QUIT

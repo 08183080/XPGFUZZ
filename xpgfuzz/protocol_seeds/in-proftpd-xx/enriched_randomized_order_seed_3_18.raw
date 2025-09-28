@@ -1,0 +1,15 @@
+USER ubuntu
+PASS ubuntu
+PBSZ 0
+CCC
+PORT 127,0,0,1,14,178
+EPRT |2|0:0:0:0:0:0:0:0|1025|
+LIST
+STAT
+RMD /nonexistent_directory
+MLST /
+LIST
+NLST
+MLSD /
+STAT
+QUIT

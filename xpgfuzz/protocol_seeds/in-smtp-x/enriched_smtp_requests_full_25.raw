@@ -1,0 +1,7 @@
+EHLO localhost
+PIPELINING
+MAIL FROM:<ubuntu@ubuntu>
+RCPT TO:<ubuntu@ubuntu>
+BDAT 3 LAST
+abc
+QUIT

@@ -1,0 +1,12 @@
+USER ubuntu
+PASS ubuntu
+SYST
+ALLO 1024
+MKD todeletenow
+XMKD todeletetoo
+SIZE todeletenow
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

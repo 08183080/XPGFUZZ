@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing_test
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+REST 0
+ESTP
+QUIT

@@ -1,0 +1,12 @@
+USER ubuntu
+PASS ubuntu
+SYST
+ADAT some_encoded_data
+MKD todeletenow
+XMKD todeletetoo
+LIST
+MIC integrity_checked_data
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

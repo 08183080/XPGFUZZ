@@ -1,0 +1,15 @@
+USER fuzzing
+PASS fuzzing
+MKD test
+CWD test
+PWD
+STAT /test
+ABOR
+XMKD test2
+XCWD test2
+XPWD
+STAT /test2
+CDUP
+XCUP
+PWD
+QUIT

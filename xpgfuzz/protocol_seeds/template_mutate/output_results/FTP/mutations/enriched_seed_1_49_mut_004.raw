@@ -1,0 +1,15 @@
+USER f
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+RNFR oldfile.txt
+RNTO newfile.txt
+SITE UTIME 20220724120000 newfile.txt
+QUIT

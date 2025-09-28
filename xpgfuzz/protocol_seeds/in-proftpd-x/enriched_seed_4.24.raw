@@ -1,0 +1,12 @@
+USER ubuntu
+PASS ubuntu
+ADAT some_encrypted_data
+SYST
+CCC
+MKD todeletenow
+XMKD todeletetoo
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

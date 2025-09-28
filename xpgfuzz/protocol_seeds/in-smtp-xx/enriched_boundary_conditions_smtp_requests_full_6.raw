@@ -1,0 +1,25 @@
+HELO  localhost
+STARTTLS
+EHLO localhost
+MAIL FROM:<ubuntu@ubuntu>
+RCPT TO:<ubuntu@ubuntu>
+DATA
+abc
+.
+HELO    local host
+MAIL FROM:<verylongemailaddress1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@veryverylongdomainname1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.com>
+SIZE 5000000
+RCPT TO:<spaces  @ spaces.com >
+DATA
+xyz
+.
+STARTTLS
+MAIL FROM:<special@char#acters.com>
+RCPT TO:<repeat@repeat.com>
+HELO special@@host
+MAIL FROM:<repeat@repeat.com>
+RCPT TO:<repeat@repeat.com>
+DATA
+123
+.
+QUIT

@@ -1,0 +1,14 @@
+USER gnizzuf
+PASS fuzzing
+CCC
+MKD test
+CWD test
+MFMT 20210101123000 test
+PWD
+XMKD test2
+XCWD test2
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

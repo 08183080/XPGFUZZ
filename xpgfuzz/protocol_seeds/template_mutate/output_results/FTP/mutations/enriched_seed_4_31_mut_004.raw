@@ -1,0 +1,12 @@
+USER fuzzing_test
+PASS fuzzing
+SYST
+MKD todeletenow
+XMKD todeletetoo
+LIST
+ESTP
+MLST todeletenow
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

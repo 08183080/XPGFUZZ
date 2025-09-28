@@ -1,0 +1,12 @@
+USER fuzzing
+PASS fuzzing
+SYST
+MKD todeletenow
+XMKD todeletetoo
+STOR testfile.txt
+LIST
+MFMT 20210101010101 testfile.txt
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

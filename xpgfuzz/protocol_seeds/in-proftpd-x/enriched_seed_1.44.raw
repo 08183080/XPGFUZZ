@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+SYST
+CONF /etc/proftpd/proftpd.conf
+ACCT
+REIN
+SMNT
+XCWD /var/ftp
+FEAT
+NOOP
+HELP
+STAT
+STRU
+QUIT

@@ -1,0 +1,10 @@
+EHLO localhost
+STARTTLS
+EHLO localhost
+CHUNKING
+MAIL FROM:<ubuntu@ubuntu>
+VRFY ubuntu@ubuntu
+RCPT TO:<ubuntu@ubuntu>
+BDAT 10 LAST
+BDAT 5 LAST
+QUIT

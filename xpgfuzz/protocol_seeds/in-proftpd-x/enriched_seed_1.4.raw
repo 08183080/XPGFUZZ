@@ -1,0 +1,16 @@
+USER ubuntu
+PASS ubuntu
+SYST
+CWD /home/ubuntu
+PWD
+ACCT
+REIN
+SMNT
+CWD /var/log
+PWD
+FEAT
+NOOP
+HELP
+STAT
+STRU
+QUIT

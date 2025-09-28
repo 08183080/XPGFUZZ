@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+OPTS MLST type;size;modify;UNIX.mode;UNIX.uid;UNIX.gid;
+STAT
+SITE CHMOD 755 /home/fuzzing
+PORT 127,ZZZ
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+LIST
+MLST /
+STAT
+LIST
+NLST
+MLSD /
+QUIT

@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+MKD test
+CWD test
+PWD
+XMKD test2
+XCWD test2
+XPWD
+DELE testfile.txt
+MDTM 20210101123000 testfile.txt
+CDUP
+XCUP
+PWD
+QUIT

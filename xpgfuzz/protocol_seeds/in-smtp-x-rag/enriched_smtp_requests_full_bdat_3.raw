@@ -1,0 +1,7 @@
+EHLO localhost
+MAIL FROM:<ubuntu@ubuntu> SIZE=500 CHUNKING
+RCPT TO:<ubuntu@ubuntu>
+BDAT 10 LAST
+.
+BDAT 5 LAST
+QUIT

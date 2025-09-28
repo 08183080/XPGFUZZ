@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+SYST
+OPTS UTF8 ON
+CONF PassiveMode YES
+MKD todeletenow
+XMKD todeletetoo
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+CONF LogTransfer YES
+OPTS MLST type;size;modify;UNIX.mode;
+QUIT

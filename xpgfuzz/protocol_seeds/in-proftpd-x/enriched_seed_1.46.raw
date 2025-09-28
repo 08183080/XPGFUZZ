@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+SYST
+MFMT 202104080925 /path/to/file.txt
+MLST /path/to/file.txt
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+QUIT

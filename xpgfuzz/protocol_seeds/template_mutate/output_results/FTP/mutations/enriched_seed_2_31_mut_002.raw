@@ -1,0 +1,15 @@
+USER fuzzing
+PASS fuzzing
+PBSZ 0
+MKD test
+CWD test
+PWD
+XMKD test2
+XCWD <script>alert(1)</script>
+XPWD
+RNFR test2
+RNTO newtest2
+CDUP
+XCUP
+PWD
+QUIT

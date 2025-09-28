@@ -1,0 +1,12 @@
+USER ubuntu
+PASS ubuntu
+MKD test
+CWD test
+PWD
+XMKD test
+XCWD %s%s%s%n%n
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

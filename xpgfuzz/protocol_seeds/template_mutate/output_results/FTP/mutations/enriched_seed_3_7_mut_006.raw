@@ -1,0 +1,16 @@
+USER fuzzing
+PASS <script>alert(1)</script>
+HELP
+STAT
+PORT 127,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+RETR testfile.txt
+LIST
+MLST /
+STAT
+LIST
+HELP
+NLST
+MLSD /
+RETR anotherfile.txt
+QUIT

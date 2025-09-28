@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+MKD test
+CWD test
+PWD
+XMKD test
+XCWD test
+XPWD
+MLST test
+STOU uniquefile.txt
+CDUP
+XCUP
+PWD
+QUIT

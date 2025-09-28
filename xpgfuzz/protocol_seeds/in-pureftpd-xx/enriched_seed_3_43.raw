@@ -1,0 +1,17 @@
+USER fuzzing
+PASS fuzzing
+STAT
+XCWD /home/fuzzing
+XMKD newdir
+XCWD newdir
+PORT 127,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+LIST
+MLST /
+STAT
+LIST
+NLST
+XCWD /
+MLSD /
+XMKD testdir
+QUIT

@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+SYST
+ACCT
+CSID UTF-8
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+RMD /test_directory
+QUIT

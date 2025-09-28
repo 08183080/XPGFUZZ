@@ -1,0 +1,19 @@
+USER ubuntu
+PASS ubuntu
+ADAT 12345
+RETR testfile.txt
+MKD test
+CWD test
+PWD
+CONF very_long_directory_name_with_special_characters_@#$%^&*()_+|}{":?><,./;'[]\~`-
+RETR another_test_file.txt
+RETR spaces in filename.txt
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+RETR repeated_command_test_file.txt
+RETR repeated_command_test_file.txt
+PWD
+QUIT

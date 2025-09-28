@@ -1,0 +1,16 @@
+EHLO localhost
+STARTTLS
+MAIL FROM:<ubuntu@ubuntu>
+RCPT TO:<ubuntu@ubuntu>
+DATA
+abc
+.
+RSET
+EHLO localhost
+ETRN
+MAIL FROM:<verylongemailaddress1234567890@example.com>
+RCPT TO:<anotherlongemailaddress1234567890@example.com>
+DATA
+def
+.
+QUIT

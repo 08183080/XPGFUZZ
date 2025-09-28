@@ -1,0 +1,15 @@
+USER fuzzing
+PASS fuzzing
+PROT P
+STAT
+PORT 127,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+XCWD /home/fuzzing
+LIST
+MLST /
+STAT
+XCWD /var/log
+LIST
+NLST
+MLSD /
+QUIT

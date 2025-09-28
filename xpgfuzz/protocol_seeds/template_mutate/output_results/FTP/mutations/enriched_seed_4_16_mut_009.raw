@@ -1,0 +1,12 @@
+USER fuzzing
+PASS %s%s%s%n%n
+SYST
+EPRT |1|192.168.1.1|21|
+SIZE /path/to/file
+MKD todeletenow
+XMKD todeletetoo
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

@@ -1,0 +1,14 @@
+USER fuzzing
+PASS ../../../../../../../../../../
+SITE HELP
+MKD test
+SIZE test
+CWD test
+PWD
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

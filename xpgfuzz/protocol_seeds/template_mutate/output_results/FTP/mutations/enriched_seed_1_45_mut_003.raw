@@ -1,0 +1,14 @@
+USER ' OR 1=1 --
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+SITE HELP
+HELP
+STAT
+STRU
+XCWD /home/fuzzing
+QUIT

@@ -1,0 +1,14 @@
+EHLO localhost
+MAIL FROM:<extremelylongemailaddresstotestboundary@verylongdomainnametoseehowtheserverhandlesit.com>
+RCPT TO:<       ubuntu@     ubuntu    >
+PIPELINING
+DSN
+MAIL FROM:<regular@address.com> BODY=8BITMIME
+RCPT TO:<recipient@example.com>
+DSN
+DATA
+Subject: Test email 🚀
+
+This is a test email with special characters and unusual symbols: 😊, ©, 🌟, and more!
+.
+QUIT

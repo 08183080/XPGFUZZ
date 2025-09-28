@@ -1,0 +1,15 @@
+USER fuzzing
+PASS gnizzuf
+AUTH TLS
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+RNFR oldfile.txt
+RNTO newfile.txt
+HELP
+STAT
+STRU
+QUIT

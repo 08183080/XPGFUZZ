@@ -1,0 +1,12 @@
+USER fuzzing
+PASS fuzzing
+SYST
+PBSZ 0
+MKD todeletenow
+XMKD todeletetoo
+LIST
+SITE UTIME 20220715 12:00:00 todeletenow
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

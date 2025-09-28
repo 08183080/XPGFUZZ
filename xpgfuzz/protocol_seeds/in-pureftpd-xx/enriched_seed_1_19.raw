@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+SYST
+ACCT
+CWD /home/fuzzing
+STOU uniquefile.txt
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+QUIT

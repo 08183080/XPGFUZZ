@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+SITE UTIME 202101011230 /path/to/file
+HELP
+STOU unique_filename.txt
+STAT
+STRU
+QUIT

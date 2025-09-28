@@ -1,0 +1,13 @@
+USER ubuntu
+PASS ubuntu
+SYST
+TYPE A
+SITE CHMOD 755 todeletenow
+MKD todeletenow
+XMKD todeletetoo
+LIST
+TYPE I
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

@@ -1,0 +1,13 @@
+USER %s%s%s%n%n
+PASS fuzzing
+SYST
+PBSZ 0
+MKD todeletenow
+XMKD todeletetoo
+LIST
+RNFR todeletenow
+RNTO newname
+RMD newname
+XRMD todeletetoo
+LIST
+QUIT

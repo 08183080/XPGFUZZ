@@ -1,0 +1,15 @@
+USER fuzzing
+PASS fuzzing
+STAT
+CWD /test
+PORT 127,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+LIST
+MLST /
+APPE newfile.txt
+STAT
+LIST
+CWD /newdir
+NLST
+MLSD /
+QUIT

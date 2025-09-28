@@ -1,0 +1,10 @@
+EHLO localhost
+NOOP
+MAIL FROM:<ubuntu@ubuntu> SIZE=500
+RCPT TO:<ubuntu@ubuntu>
+NOOP
+BDAT 10
+.
+BDAT 5 LAST
+NOOP
+QUIT

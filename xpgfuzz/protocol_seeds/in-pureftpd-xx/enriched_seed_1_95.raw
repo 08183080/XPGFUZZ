@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+SYST
+CCC
+ACCT
+REIN
+ESTA /data
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+QUIT

@@ -1,0 +1,9 @@
+USER anonymous
+PASS ubuntu
+SYST
+PBSZ 0
+PWD
+TYPE I
+PORT 127,0,0,1,152,193
+LIST
+QUIT

@@ -1,0 +1,139 @@
+[
+  {
+    "name": "SMTP",
+    "template": [
+      "EHLO <<domain:string>>\r\n",
+      "MAIL FROM: <<sender:string>>\r\n",
+      "RCPT TO: <<recipient:string>>\r\n",
+      "DATA\r\n",
+      "<<message:string>>\r\n.\r\n",
+      "QUIT\r\n"
+    ],
+    "regex": "EHLO\\ (.*?)\\\r\\\nMAIL\\ FROM:\\ (.*?)\\\r\\\nRCPT\\ TO:\\ (.*?)\\\r\\\nDATA\\\r\\\n(.*?)\\\r\\\n\\.\\\r\\\nQUIT\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "domain",
+        "type": "string"
+      },
+      {
+        "name": "sender",
+        "type": "string"
+      },
+      {
+        "name": "recipient",
+        "type": "string"
+      },
+      {
+        "name": "message",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "name": "HELO",
+    "template": [
+      "HELO <<domain:string>>\r\n"
+    ],
+    "regex": "HELO\\ (.*?)\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "domain",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "name": "LOGIN",
+    "template": [
+      "AUTH LOGIN\r\n",
+      "<<username:base64_encoded_string>>\r\n",
+      "<<password:base64_encoded_string>>\r\n"
+    ],
+    "regex": "AUTH\\ LOGIN\\\r\\\n<<username:base64_encoded_string>>\\\r\\\n<<password:base64_encoded_string>>\\\r\\\n",
+    "placeholders": []
+  },
+  {
+    "name": "STARTTLS",
+    "template": [
+      "STARTTLS\r\n"
+    ],
+    "regex": "STARTTLS\\\r\\\n",
+    "placeholders": []
+  },
+  {
+    "name": "RSET",
+    "template": [
+      "RSET\r\n"
+    ],
+    "regex": "RSET\\\r\\\n",
+    "placeholders": []
+  },
+  {
+    "name": "VRFY",
+    "template": [
+      "VRFY <<username:string>>\r\n"
+    ],
+    "regex": "VRFY\\ (.*?)\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "username",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "name": "EXPN",
+    "template": [
+      "EXPN <<mailing_list:string>>\r\n"
+    ],
+    "regex": "EXPN\\ (.*?)\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "mailing_list",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "name": "NOOP",
+    "template": [
+      "NOOP\r\n"
+    ],
+    "regex": "NOOP\\\r\\\n",
+    "placeholders": []
+  },
+  {
+    "name": "HELP",
+    "template": [
+      "HELP\r\n"
+    ],
+    "regex": "HELP\\\r\\\n",
+    "placeholders": []
+  },
+  {
+    "name": "XCLIENT",
+    "template": [
+      "XCLIENT ADDR=<<client_ip:string>>\r\n"
+    ],
+    "regex": "XCLIENT\\ ADDR=(.*?)\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "client_ip",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "name": "SIZE",
+    "template": [
+      "SIZE <<message_size:integer>>\r\n"
+    ],
+    "regex": "SIZE\\ (.*?)\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "message_size",
+        "type": "integer"
+      }
+    ]
+  }
+]

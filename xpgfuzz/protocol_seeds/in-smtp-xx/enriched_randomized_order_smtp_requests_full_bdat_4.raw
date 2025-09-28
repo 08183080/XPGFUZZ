@@ -1,0 +1,12 @@
+EHLO localhost
+MAIL FROM:<verylongemailaddress@example.com>
+RCPT TO:<user@domain.com>
+DSN
+ETRN
+BDAT 10
+.
+BDAT 5
+DSN
+RCPT TO:<    space@domain.com    >
+ETRN
+QUIT

@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+MODE S
+MKD test
+CWD undefined
+PWD
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+SITE HELP
+QUIT

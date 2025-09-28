@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+XCWD <script>alert(1)</script>
+MLSD
+HELP
+STAT
+STRU
+QUIT

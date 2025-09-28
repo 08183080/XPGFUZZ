@@ -1,0 +1,15 @@
+USER ubuntu
+PASS ubuntu
+MKD test
+CWD test
+PWD
+XMKD test
+XCWD test
+XPWD
+MDTM 20201010101010 /test/file.txt
+RANG 0-1024
+REST 100
+CDUP
+XCUP
+PWD
+QUIT

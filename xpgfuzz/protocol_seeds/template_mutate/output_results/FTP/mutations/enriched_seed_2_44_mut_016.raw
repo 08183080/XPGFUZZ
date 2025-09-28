@@ -1,0 +1,14 @@
+USER fuzzing
+PASS 
+MKD test
+CWD test
+PWD
+ALLO 1024
+APPE file.txt
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

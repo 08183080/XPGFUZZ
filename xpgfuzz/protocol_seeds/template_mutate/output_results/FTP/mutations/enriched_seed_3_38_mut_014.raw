@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+STAT
+PORT ' OR 1=1 --,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+XMKD /testdir
+LIST
+MLST /
+ESTP /testfile.txt
+STAT
+LIST
+NLST
+MLSD /
+QUIT

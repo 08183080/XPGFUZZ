@@ -1,0 +1,12 @@
+AUTH TLS
+USER ubuntu
+PASS ubuntu
+SYST
+CONF AllowOverwrite on
+MKD todeletenow
+XMKD todeletetoo
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

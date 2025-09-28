@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+MLST /home/fuzzing
+TYPE I
+NOOP
+HELP
+STAT
+STRU
+QUIT

@@ -1,0 +1,378 @@
+[
+  {
+    "name": "RTSP_ALL",
+    "template": [
+      "DESCRIBE <<uri:path>>\r\nCSeq: <<cseq:integer>>\r\nUser-Agent: <<agent:string>>\r\nAccept: <<accept_type:string>>\r\n\r\n",
+      "SETUP <<uri:path>>\r\nCSeq: <<cseq:integer>>\r\nUser-Agent: <<agent:string>>\r\nTransport: <<transport:string>>\r\n\r\n",
+      "PLAY <<uri:path>>\r\nCSeq: <<cseq:integer>>\r\nUser-Agent: <<agent:string>>\r\nSession: <<session_id:string>>\r\nRange: <<range:string>>\r\n\r\n",
+      "PAUSE <<uri:path>>\r\nCSeq: <<cseq:integer>>\r\nUser-Agent: <<agent:string>>\r\nSession: <<session_id:string>>\r\n\r\n",
+      "TEARDOWN <<uri:path>>\r\nCSeq: <<cseq:integer>>\r\nUser-Agent: <<agent:string>>\r\nSession: <<session_id:string>>\r\n\r\n"
+    ],
+    "regex": "DESCRIBE\\ (.*?)\\\r\\\nCSeq:\\ (.*?)\\\r\\\nUser\\-Agent:\\ (.*?)\\\r\\\nAccept:\\ (.*?)\\\r\\\n\\\r\\\nSETUP\\ (.*?)\\\r\\\nCSeq:\\ (.*?)\\\r\\\nUser\\-Agent:\\ (.*?)\\\r\\\nTransport:\\ (.*?)\\\r\\\n\\\r\\\nPLAY\\ (.*?)\\\r\\\nCSeq:\\ (.*?)\\\r\\\nUser\\-Agent:\\ (.*?)\\\r\\\nSession:\\ (.*?)\\\r\\\nRange:\\ (.*?)\\\r\\\n\\\r\\\nPAUSE\\ (.*?)\\\r\\\nCSeq:\\ (.*?)\\\r\\\nUser\\-Agent:\\ (.*?)\\\r\\\nSession:\\ (.*?)\\\r\\\n\\\r\\\nTEARDOWN\\ (.*?)\\\r\\\nCSeq:\\ (.*?)\\\r\\\nUser\\-Agent:\\ (.*?)\\\r\\\nSession:\\ (.*?)\\\r\\\n\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "uri",
+        "type": "path"
+      },
+      {
+        "name": "cseq",
+        "type": "integer"
+      },
+      {
+        "name": "agent",
+        "type": "string"
+      },
+      {
+        "name": "accept_type",
+        "type": "string"
+      },
+      {
+        "name": "uri",
+        "type": "path"
+      },
+      {
+        "name": "cseq",
+        "type": "integer"
+      },
+      {
+        "name": "agent",
+        "type": "string"
+      },
+      {
+        "name": "transport",
+        "type": "string"
+      },
+      {
+        "name": "uri",
+        "type": "path"
+      },
+      {
+        "name": "cseq",
+        "type": "integer"
+      },
+      {
+        "name": "agent",
+        "type": "string"
+      },
+      {
+        "name": "session_id",
+        "type": "string"
+      },
+      {
+        "name": "range",
+        "type": "string"
+      },
+      {
+        "name": "uri",
+        "type": "path"
+      },
+      {
+        "name": "cseq",
+        "type": "integer"
+      },
+      {
+        "name": "agent",
+        "type": "string"
+      },
+      {
+        "name": "session_id",
+        "type": "string"
+      },
+      {
+        "name": "uri",
+        "type": "path"
+      },
+      {
+        "name": "cseq",
+        "type": "integer"
+      },
+      {
+        "name": "agent",
+        "type": "string"
+      },
+      {
+        "name": "session_id",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "name": "OPTIONS",
+    "template": [
+      "OPTIONS * RTSP/1.0\r\n",
+      "CSeq: <<cseq:integer>>\r\n",
+      "User-Agent: <<agent:string>>\r\n",
+      "\r\n"
+    ],
+    "regex": "OPTIONS\\ \\*\\ RTSP/1\\.0\\\r\\\nCSeq:\\ (.*?)\\\r\\\nUser\\-Agent:\\ (.*?)\\\r\\\n\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "cseq",
+        "type": "integer"
+      },
+      {
+        "name": "agent",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "name": "SETUP",
+    "template": [
+      "SETUP <<uri:path>> RTSP/1.0\r\n",
+      "CSeq: <<cseq:integer>>\r\n",
+      "User-Agent: <<agent:string>>\r\n",
+      "Transport: <<transport:string>>\r\n",
+      "\r\n"
+    ],
+    "regex": "SETUP\\ (.*?)\\ RTSP/1\\.0\\\r\\\nCSeq:\\ (.*?)\\\r\\\nUser\\-Agent:\\ (.*?)\\\r\\\nTransport:\\ (.*?)\\\r\\\n\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "uri",
+        "type": "path"
+      },
+      {
+        "name": "cseq",
+        "type": "integer"
+      },
+      {
+        "name": "agent",
+        "type": "string"
+      },
+      {
+        "name": "transport",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "name": "PLAY",
+    "template": [
+      "PLAY <<uri:path>> RTSP/1.0\r\n",
+      "CSeq: <<cseq:integer>>\r\n",
+      "User-Agent: <<agent:string>>\r\n",
+      "\r\n"
+    ],
+    "regex": "PLAY\\ (.*?)\\ RTSP/1\\.0\\\r\\\nCSeq:\\ (.*?)\\\r\\\nUser\\-Agent:\\ (.*?)\\\r\\\n\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "uri",
+        "type": "path"
+      },
+      {
+        "name": "cseq",
+        "type": "integer"
+      },
+      {
+        "name": "agent",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "name": "PAUSE",
+    "template": [
+      "PAUSE <<uri:path>> RTSP/1.0\r\n",
+      "CSeq: <<cseq:integer>>\r\n",
+      "User-Agent: <<agent:string>>\r\n",
+      "\r\n"
+    ],
+    "regex": "PAUSE\\ (.*?)\\ RTSP/1\\.0\\\r\\\nCSeq:\\ (.*?)\\\r\\\nUser\\-Agent:\\ (.*?)\\\r\\\n\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "uri",
+        "type": "path"
+      },
+      {
+        "name": "cseq",
+        "type": "integer"
+      },
+      {
+        "name": "agent",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "name": "TEARDOWN",
+    "template": [
+      "TEARDOWN <<uri:path>> RTSP/1.0\r\n",
+      "CSeq: <<cseq:integer>>\r\n",
+      "User-Agent: <<agent:string>>\r\n",
+      "\r\n"
+    ],
+    "regex": "TEARDOWN\\ (.*?)\\ RTSP/1\\.0\\\r\\\nCSeq:\\ (.*?)\\\r\\\nUser\\-Agent:\\ (.*?)\\\r\\\n\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "uri",
+        "type": "path"
+      },
+      {
+        "name": "cseq",
+        "type": "integer"
+      },
+      {
+        "name": "agent",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "name": "DESCRIBE",
+    "template": [
+      "DESCRIBE <<uri:path>>\r\n",
+      "CSeq: <<cseq:integer>>\r\n",
+      "User-Agent: <<agent:string>>\r\n",
+      "Accept: <<accept_type:string>>\r\n",
+      "\r\n"
+    ],
+    "regex": "DESCRIBE\\ (.*?)\\\r\\\nCSeq:\\ (.*?)\\\r\\\nUser\\-Agent:\\ (.*?)\\\r\\\nAccept:\\ (.*?)\\\r\\\n\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "uri",
+        "type": "path"
+      },
+      {
+        "name": "cseq",
+        "type": "integer"
+      },
+      {
+        "name": "agent",
+        "type": "string"
+      },
+      {
+        "name": "accept_type",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "name": "ANNOUNCE",
+    "template": [
+      "ANNOUNCE <<uri:path>> RTSP/1.0\r\n",
+      "CSeq: <<cseq:integer>>\r\n",
+      "User-Agent: <<agent:string>>\r\n",
+      "Content-Type: <<content_type:string>>\r\n",
+      "Content-Length: <<content_length:integer>>\r\n",
+      "\r\n<<content:string>>"
+    ],
+    "regex": "ANNOUNCE\\ (.*?)\\ RTSP/1\\.0\\\r\\\nCSeq:\\ (.*?)\\\r\\\nUser\\-Agent:\\ (.*?)\\\r\\\nContent\\-Type:\\ (.*?)\\\r\\\nContent\\-Length:\\ (.*?)\\\r\\\n\\\r\\\n(.*?)",
+    "placeholders": [
+      {
+        "name": "uri",
+        "type": "path"
+      },
+      {
+        "name": "cseq",
+        "type": "integer"
+      },
+      {
+        "name": "agent",
+        "type": "string"
+      },
+      {
+        "name": "content_type",
+        "type": "string"
+      },
+      {
+        "name": "content_length",
+        "type": "integer"
+      },
+      {
+        "name": "content",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "name": "RECORD",
+    "template": [
+      "RECORD <<uri:path>> RTSP/1.0\r\n",
+      "CSeq: <<cseq:integer>>\r\n",
+      "User-Agent: <<agent:string>>\r\n",
+      "\r\n"
+    ],
+    "regex": "RECORD\\ (.*?)\\ RTSP/1\\.0\\\r\\\nCSeq:\\ (.*?)\\\r\\\nUser\\-Agent:\\ (.*?)\\\r\\\n\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "uri",
+        "type": "path"
+      },
+      {
+        "name": "cseq",
+        "type": "integer"
+      },
+      {
+        "name": "agent",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "name": "REDIRECT",
+    "template": [
+      "REDIRECT <<uri:path>> RTSP/1.0\r\n",
+      "CSeq: <<cseq:integer>>\r\n",
+      "User-Agent: <<agent:string>>\r\n",
+      "Location: <<redirect_location:string>>\r\n",
+      "\r\n"
+    ],
+    "regex": "REDIRECT\\ (.*?)\\ RTSP/1\\.0\\\r\\\nCSeq:\\ (.*?)\\\r\\\nUser\\-Agent:\\ (.*?)\\\r\\\nLocation:\\ (.*?)\\\r\\\n\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "uri",
+        "type": "path"
+      },
+      {
+        "name": "cseq",
+        "type": "integer"
+      },
+      {
+        "name": "agent",
+        "type": "string"
+      },
+      {
+        "name": "redirect_location",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "name": "SET_PARAMETER",
+    "template": [
+      "SET_PARAMETER <<uri:path>> RTSP/1.0\r\n",
+      "CSeq: <<cseq:integer>>\r\n",
+      "User-Agent: <<agent:string>>\r\n",
+      "Content-Type: <<content_type:string>>\r\n",
+      "Content-Length: <<content_length:integer>>\r\n",
+      "\r\n<<content:string>>"
+    ],
+    "regex": "SET_PARAMETER\\ (.*?)\\ RTSP/1\\.0\\\r\\\nCSeq:\\ (.*?)\\\r\\\nUser\\-Agent:\\ (.*?)\\\r\\\nContent\\-Type:\\ (.*?)\\\r\\\nContent\\-Length:\\ (.*?)\\\r\\\n\\\r\\\n(.*?)",
+    "placeholders": [
+      {
+        "name": "uri",
+        "type": "path"
+      },
+      {
+        "name": "cseq",
+        "type": "integer"
+      },
+      {
+        "name": "agent",
+        "type": "string"
+      },
+      {
+        "name": "content_type",
+        "type": "string"
+      },
+      {
+        "name": "content_length",
+        "type": "integer"
+      },
+      {
+        "name": "content",
+        "type": "string"
+      }
+    ]
+  }
+]

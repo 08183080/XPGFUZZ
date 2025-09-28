@@ -1,0 +1,14 @@
+USER fuzzing
+PASS gnizzuf
+SYST
+ACCT
+CCC
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+XMKD testdir
+STAT
+STRU
+QUIT

@@ -1,0 +1,15 @@
+USER fuzzing
+PASS fuzzing
+AUTH TLS
+MKD test
+CWD test
+PWD
+XMKD test2
+XCWD test2
+XPWD
+RNFR test2
+RNTO test_renamed
+CDUP
+XCUP
+PWD
+QUIT

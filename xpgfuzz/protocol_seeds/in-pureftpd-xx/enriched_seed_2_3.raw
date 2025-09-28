@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+MKD test
+CWD test
+PWD
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+DELE test/file.txt
+SITE UTIME 20221010123000 test/file.txt
+QUIT

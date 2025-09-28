@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+MKD test
+CWD ../../../../../../../../../../
+PWD
+XMKD test
+XCWD test
+XPWD
+EPSV
+MLST test
+CDUP
+XCUP
+PWD
+QUIT

@@ -1,0 +1,15 @@
+USER ubuntu
+PASS ubuntu
+MKD test
+RANG 0-100
+CWD test
+PWD
+DELE test/extrafile.txt
+XMKD test
+XCWD test
+XPWD
+CDUP
+STAT /test/über-long-directory-name-with-special-$$-characters-and-spaces
+XCUP
+PWD
+QUIT

@@ -1,0 +1,14 @@
+USER fuzzing_test
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+MFMT 202101011230 /path/to/file
+NLST /directory
+HELP
+STAT
+STRU
+QUIT

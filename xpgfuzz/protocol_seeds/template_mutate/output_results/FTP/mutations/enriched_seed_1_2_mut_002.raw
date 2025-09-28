@@ -1,0 +1,14 @@
+USER <script>alert(1)</script>
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+MFMT 20210102120000 /example/file.txt
+HELP
+STAT
+STRU
+XCUP
+QUIT

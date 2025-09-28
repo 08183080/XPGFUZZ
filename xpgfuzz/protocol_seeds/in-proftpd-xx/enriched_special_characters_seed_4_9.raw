@@ -1,0 +1,16 @@
+USER ubuntu
+PASS ubuntu
+SYST
+ADAT =*=*=*==*=*=*=*=*=*==*=*=*=*=*
+STAT /home
+LANG en_US.UTF-8
+MKD todeletenow
+XMKD todeletetoo
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LANG zh_CN.UTF-8
+STAT /home/ubuntu
+LIST
+ADAT @@@@@@@@%%%%%%@@@@@@@
+QUIT

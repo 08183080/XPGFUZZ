@@ -1,0 +1,10 @@
+EHLO localhost
+VRFY user@example.com
+MAIL FROM:<test@example.com>
+ETRN example.com
+RCPT TO:<target@example.com>
+DATA
+Subject: Fuzzing Test
+This is a test email for fuzzing purposes.
+.
+QUIT

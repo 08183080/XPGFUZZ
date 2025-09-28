@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+MKD test
+CWD test
+PWD
+DELE sample.txt
+XMKD test
+XCWD test_test
+XPWD
+CDUP
+XCUP
+PWD
+PBSZ 0
+QUIT

@@ -1,0 +1,16 @@
+USER ubuntu
+PASS ubuntu
+STAT
+MKD new_directory
+SIZE new_directory
+PORT 127,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+LIST
+MLST /
+STAT
+LIST
+MKD files
+SIZE files
+NLST
+MLSD /
+QUIT

@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+PWD
+SYST
+STOU uniquefile.txt
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+QUIT

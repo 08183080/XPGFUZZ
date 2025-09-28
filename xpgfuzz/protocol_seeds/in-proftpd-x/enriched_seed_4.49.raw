@@ -1,0 +1,12 @@
+USER ubuntu
+PASS ubuntu
+SYST
+REIN
+MKD todeletenow
+XMKD todeletetoo
+LIST
+STOU uniquefile.txt
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

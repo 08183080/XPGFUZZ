@@ -1,0 +1,15 @@
+USER ubuntu
+PASS ubuntu
+PBSZ 0
+OPTS UTF8 ON
+XRMD /home/ubuntu/testdir
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+QUIT

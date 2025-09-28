@@ -1,0 +1,15 @@
+USER fuzzing
+PASS fuzzing
+HELP
+MKD test
+CWD test
+PWD
+CCC
+XMKD test
+XCWD <script>alert(1)</script>
+XPWD
+CDUP
+XCUP
+PWD
+HELP commands
+QUIT

@@ -1,0 +1,12 @@
+USER fuzzing
+PASS fuzzing
+SYST
+MKD todeletenow
+XMKD todeletetoo
+LIST
+SITE CHMOD 755 todeletenow
+SITE HELP
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

@@ -1,0 +1,16 @@
+USER ubuntu
+PASS ubuntu
+MKD test
+CWD test
+PWD
+XMKD test
+XCWD test
+XPWD
+APPE upload.txt
+REIN
+USER ubuntu
+PASS ubuntu
+CDUP
+XCUP
+PWD
+QUIT

@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+EPRT |1|192.168.0.2|6275|
+PASV
+MKD test
+CWD ' OR 1=1 --
+PWD
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

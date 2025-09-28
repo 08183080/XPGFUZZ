@@ -1,0 +1,12 @@
+AUTH TLS
+USER fuzzing
+PASS fuzzing
+SYST
+SITE IDLE 300
+MKD todeletenow
+XMKD todeletetoo
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

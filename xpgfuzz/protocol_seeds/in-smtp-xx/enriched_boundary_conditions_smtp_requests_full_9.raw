@@ -1,0 +1,19 @@
+EHLO localhost
+STARTTLS
+EHLO localhost
+MAIL FROM:<longemailaddress@example.com.somereallylongtld>
+RCPT TO:<anotherlongemailaddress@differentexample.com.somereallylongtld>
+VRFY <whitespace@whitespace>
+ETRN domain.com
+DATA
+Subject: Test email
+
+This is a test email with special characters ñ, ü, and emoji 😊.
+.
+RCPT TO:<repeated@command.com>
+RCPT TO:<repeated@command.com>
+MAIL FROM:<special@chars!#$%&'*+-/=?^_`{|}~.com>
+DATA
+Test of special characters in data section: !#$%&'*+-/=?^_`{|}~.
+.
+QUIT

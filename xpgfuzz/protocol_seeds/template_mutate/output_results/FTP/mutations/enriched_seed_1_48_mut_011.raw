@@ -1,0 +1,14 @@
+USER fuzzing
+PASS <script>alert(1)</script>
+SYST
+XCUP
+XCWD /home/fuzzing
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+QUIT

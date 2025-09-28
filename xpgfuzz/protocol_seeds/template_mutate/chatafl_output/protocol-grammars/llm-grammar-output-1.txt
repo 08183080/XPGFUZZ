@@ -1,0 +1,28 @@
+For the FTP/proftpd protocol, the client request templates can vary depending on the specific command being sent. Some common FTP client request templates include:
+
+1. GET: ["GET <<VALUE>>\r\n"]
+2. PUT: ["PUT <<VALUE>>\r\n"]
+3. LIST: ["LIST\r\n"]
+4. RETR: ["RETR <<VALUE>>\r\n"]
+5. STOR: ["STOR <<VALUE>>\r\n"]
+6. DELE: ["DELE <<VALUE>>\r\n"]
+7. MKD: ["MKD <<VALUE>>\r\n"]
+8. RMD: ["RMD <<VALUE>>\r\n"]
+9. RNFR: ["RNFR <<VALUE>>\r\n"]
+10. RNTO: ["RNTO <<VALUE>>\r\n"]
+
+These are just a few examples of client request templates for common FTP commands in the proftpd protocol. Each command has its own specific syntax and parameters that need to be included in the request template.
+Here are some additional client request templates for the FTP/proftpd protocol:
+
+11. USER: ["USER <<VALUE>>\r\n"]
+12. PASS: ["PASS <<VALUE>>\r\n"]
+13. TYPE: ["TYPE <<VALUE>>\r\n"]
+14. SYST: ["SYST\r\n"]
+15. PWD: ["PWD\r\n"]
+16. CWD: ["CWD <<VALUE>>\r\n"]
+17. CDUP: ["CDUP\r\n"]
+18. PASV: ["PASV\r\n"]
+19. PORT: ["PORT <<VALUE>>\r\n"]
+20. ABOR: ["ABOR\r\n"]
+
+These templates represent common client requests used in the FTP/proftpd protocol for actions such as authentication, file transfer settings, system information, directory operations, and more. Each template includes the command name followed by the necessary parameter placeholders (if any) indicated by "<<VALUE>>".

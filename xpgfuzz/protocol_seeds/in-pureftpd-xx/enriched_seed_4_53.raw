@@ -1,0 +1,12 @@
+USER fuzzing
+PASS fuzzing
+SYST
+PROT P
+MKD todeletenow
+XMKD todeletetoo
+LIST
+SITE IDLE 300
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

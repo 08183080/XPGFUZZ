@@ -1,0 +1,14 @@
+USER fuzzing
+PASS ' OR 1=1 --
+MKD test
+CWD test
+PWD
+DELE sample.txt
+MODE S
+XMKD test2
+XCWD test2
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

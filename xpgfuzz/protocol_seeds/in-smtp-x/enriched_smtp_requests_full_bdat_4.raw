@@ -1,0 +1,8 @@
+EHLO localhost
+STARTTLS
+EHLO localhost
+MAIL FROM:<ubuntu@ubuntu>
+RCPT TO:<ubuntu@ubuntu>
+BDAT 10 LAST
+BDAT 5 LAST
+QUIT

@@ -1,0 +1,10 @@
+USER anonymous
+PASS ubuntu
+SYST
+TYPE I
+PWD
+PORT 127,0,0,1,152,193
+RETR examplefile.txt
+LIST
+TYPE A
+QUIT

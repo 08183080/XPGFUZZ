@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+XMKD new_directory
+RNFR old_file
+FEAT
+NOOP
+HELP
+STAT
+STRU
+QUIT

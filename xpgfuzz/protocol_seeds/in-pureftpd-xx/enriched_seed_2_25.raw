@@ -1,0 +1,15 @@
+USER fuzzing
+PASS fuzzing
+TYPE I
+MKD test
+CWD test
+PWD
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+TYPE A
+XDBG detail
+QUIT

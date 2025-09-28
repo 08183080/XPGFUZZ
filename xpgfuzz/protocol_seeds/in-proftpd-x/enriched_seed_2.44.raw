@@ -1,0 +1,16 @@
+USER ubuntu
+PASS ubuntu
+MODE S
+NOOP
+MKD test
+CWD test
+PWD
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+MODE B
+NOOP
+QUIT

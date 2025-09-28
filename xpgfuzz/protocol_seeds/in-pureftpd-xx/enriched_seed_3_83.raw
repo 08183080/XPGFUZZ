@@ -1,0 +1,16 @@
+USER fuzzing
+PASS fuzzing
+STAT
+PORT 127,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+MKD testdir
+LIST
+MLST /
+REST 0
+STAT
+LIST
+NLST
+MLSD /
+MKD newdir
+REST 100
+QUIT

@@ -1,0 +1,13 @@
+USER fuzzing
+PASS <script>alert(1)</script>
+SYST
+HELP
+NOOP
+MKD todeletenow
+XMKD todeletetoo
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+NOOP
+QUIT

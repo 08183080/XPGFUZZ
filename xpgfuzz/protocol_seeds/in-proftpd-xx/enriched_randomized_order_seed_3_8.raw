@@ -1,0 +1,18 @@
+USER ubuntu
+PASS ubuntu
+OPTS UTF8 ON
+RNFR /home/ubuntu/old_file.txt
+PBSZ 0
+STAT
+PORT 127,0,0,1,14,178
+EPRT |2|0:0:0:0:0:0:0:0|1025|
+LIST
+MLST /
+STAT
+LIST
+NLST
+OPTS MLST type;size;modify;UNIX.mode;UNIX.uid;UNIX.gid;
+RNFR /home/ubuntu/very_long_filename_with_special_chars_@#$%^&*()_+=-{}[]';,.<>~`|_!.txt
+PBSZ 8192
+MLSD /
+QUIT

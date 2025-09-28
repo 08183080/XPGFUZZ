@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+SYST
+PASV
+MLSD
+MKD todeletenow
+XMKD todeletetoo
+PASV
+LIST
+RMD todeletenow
+XRMD todeletetoo
+PASV
+LIST
+QUIT

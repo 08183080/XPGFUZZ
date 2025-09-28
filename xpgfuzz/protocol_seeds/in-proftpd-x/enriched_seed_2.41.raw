@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+ALLO 1024
+MKD test
+CWD test
+PWD
+EPRT |1|192.168.1.1|21|
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

@@ -1,0 +1,14 @@
+USER ' OR 1=1 --
+PASS fuzzing
+SYST
+CWD /test/dir
+ACCT
+REIN
+SMNT
+FEAT
+PROT P
+NOOP
+HELP
+STAT
+STRU
+QUIT

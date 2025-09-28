@@ -1,0 +1,16 @@
+USER ubuntu
+PASS ubuntu
+SYST
+MKD todeletenow
+XMKD todeletetoo
+XCWD /path/to/🚀folder
+PWD
+MIC echo test
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+XCWD ../../../..//////////over/under
+PWD
+MIC echo 123
+QUIT

@@ -1,0 +1,17 @@
+USER ubuntu
+PASS ubuntu
+FEAT
+SMNT /very/long/path/with spaces/and/special/characters/like/äöüß¿¡
+MKD test
+MFF modify;UNIX.group=wheel;UNIX.mode=0644; test
+CWD test
+PWD
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+SMNT /another/long/path/with/special_characters/!@#$%^&*()
+FEAT
+QUIT

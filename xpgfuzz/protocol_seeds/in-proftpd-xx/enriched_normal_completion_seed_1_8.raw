@@ -1,0 +1,27 @@
+USER ubuntu
+PASS ubuntu
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+QUIT
+REST 0
+PORT 192,168,1,1,200,100
+XRMD test_directory
+REST 999999999
+PORT 256,256,256,256,300,300
+XRMD    extra_space_directory
+REST 2147483647
+PORT 0,0,0,0,0,0
+XRMD special_chars_dir_@#$%^&*()
+REST -1
+PORT 192,168,1,1,200,100
+XRMD repeated_command
+REST 0
+PORT 192,168,1,1,200,100
+XRMD repeated_command

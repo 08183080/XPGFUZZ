@@ -1,0 +1,13 @@
+USER fuzzing
+PASS fuzzing
+SYST
+MKD todeletenow
+XMKD todeletetoo
+OPTS MLST type;size;modify;perm;
+NLST
+LIST
+RMD todeletenow
+XRMD todeletetoo
+NLST
+LIST
+QUIT

@@ -1,0 +1,14 @@
+USER fuzzing
+PASS f
+SYST
+OPTS MLST type;size;modify;UNIX.mode;
+ACCT
+CWD /home/fuzzing
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+QUIT

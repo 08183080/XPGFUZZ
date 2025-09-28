@@ -1,0 +1,14 @@
+USER <script>alert(1)</script>
+PASS fuzzing
+MKD test
+CWD test
+PWD
+EPSV
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+XDBG
+QUIT

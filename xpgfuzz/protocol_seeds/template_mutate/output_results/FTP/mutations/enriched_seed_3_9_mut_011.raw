@@ -1,0 +1,14 @@
+USER <script>alert(1)</script>
+PASS fuzzing
+STAT
+ESTA
+PBSZ 0
+PORT 127,0,0,1,14,178
+EPRT |2|::1|1025|
+LIST
+MLST /
+STAT
+LIST
+NLST
+MLSD /
+QUIT

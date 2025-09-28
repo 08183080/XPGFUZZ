@@ -1,0 +1,13 @@
+USER f
+PASS fuzzing
+SYST
+HELP
+NOOP
+MKD todeletenow
+XMKD todeletetoo
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+NOOP
+QUIT

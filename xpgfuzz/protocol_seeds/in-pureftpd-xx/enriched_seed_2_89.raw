@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+MKD test
+CWD test
+PWD
+XMKD test2
+XCWD test2
+XPWD
+DELE test2
+CDUP
+XCUP
+PWD
+HELP
+QUIT

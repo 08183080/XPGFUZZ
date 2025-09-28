@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+SYST
+HELP SITE
+OPTS UTF8 ON
+MKD todeletenow
+XMKD todeletetoo
+LIST
+OPTS MLST type;size;modify;UNIX.mode;
+RMD todeletenow
+XRMD todeletetoo
+LIST
+HELP FEAT
+QUIT

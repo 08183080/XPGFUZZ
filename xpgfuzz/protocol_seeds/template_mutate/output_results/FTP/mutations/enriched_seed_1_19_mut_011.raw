@@ -1,0 +1,14 @@
+USER ../../../../../../../../../../
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+MDTM 20210101123000
+MFMT 20210101123000 /example.txt
+NOOP
+HELP
+STAT
+STRU
+QUIT

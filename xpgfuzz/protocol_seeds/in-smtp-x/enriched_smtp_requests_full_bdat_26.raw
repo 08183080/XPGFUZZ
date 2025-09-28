@@ -1,0 +1,10 @@
+EHLO localhost
+STARTTLS
+EHLO localhost
+MAIL FROM:<test@example.com>
+RCPT TO:<test@example.com>
+DATA
+Subject: Test Email
+Hello, this is a test.
+.
+QUIT

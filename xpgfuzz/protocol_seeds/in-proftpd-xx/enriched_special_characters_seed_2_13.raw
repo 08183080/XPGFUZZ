@@ -1,0 +1,26 @@
+USER ubuntu
+PASS ubuntu
+MKD test
+CWD test
+PWD
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+XRMD test
+ABOR
+TYPE A
+MKD longdirectoryname______________________________________________________________
+CWD longdirectoryname______________________________________________________________
+XRMD longdirectoryname______________________________________________________________
+MKD  test
+CWD  test
+XRMD  test
+MKD test@#$%^&*()_+
+CWD test@#$%^&*()_+
+XRMD test@#$%^&*()_+
+TYPE I
+ABOR
+QUIT

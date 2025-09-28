@@ -1,0 +1,12 @@
+USER fuzzing
+PASS fuzzing
+SYST
+MKD todeletenow
+XMKD todeletetoo
+LIST
+STOR examplefile.txt
+SITE UTIME examplefile.txt 20210101123000 20210101123000 20210101123000 UTC
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

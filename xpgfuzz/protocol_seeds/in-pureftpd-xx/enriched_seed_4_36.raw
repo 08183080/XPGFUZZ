@@ -1,0 +1,12 @@
+USER fuzzing
+PASS fuzzing
+SYST
+XPWD
+MKD todeletenow
+XMKD todeletetoo
+LIST
+RNFR todeletenow
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+STAT
+XDBG /debug-info
+PORT 127,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+XMKD /new-directory
+LIST
+MLST /
+STAT
+LIST
+NLST
+MLSD /
+QUIT

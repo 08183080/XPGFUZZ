@@ -1,0 +1,9 @@
+EHLO localhost
+DSN
+MAIL FROM:<ubuntu@ubuntu> NOTIFY=SUCCESS,FAILURE ORCPT=rfc822;ubuntu@ubuntu
+RCPT TO:<ubuntu@ubuntu> NOTIFY=FAILURE
+ETRN
+BDAT 10
+.
+BDAT 5
+QUIT

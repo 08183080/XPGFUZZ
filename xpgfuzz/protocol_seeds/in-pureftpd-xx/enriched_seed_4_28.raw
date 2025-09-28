@@ -1,0 +1,12 @@
+USER fuzzing
+PASS fuzzing
+SYST
+SIZE importantfile.txt
+MKD todeletenow
+XMKD todeletetoo
+LIST
+XCUP
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

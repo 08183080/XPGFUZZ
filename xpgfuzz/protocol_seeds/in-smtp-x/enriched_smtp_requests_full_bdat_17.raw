@@ -1,0 +1,8 @@
+EHLO localhost
+STARTTLS
+EHLO localhost
+MAIL FROM:<test@example.com>
+RCPT TO:<test@example.com>
+BDAT 10 LAST
+BDAT 5 LAST
+QUIT

@@ -1,0 +1,12 @@
+USER undefined
+PASS fuzzing
+SYST
+TYPE A
+MKD todeletenow
+XMKD todeletetoo
+LIST
+RNFR todeletenow
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+MKD test
+CWD test
+PWD
+ENC UTF-8
+MDTM 20210101123000 test
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

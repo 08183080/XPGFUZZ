@@ -1,0 +1,14 @@
+USER <script>alert(1)</script>
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+REST 0
+ESTP
+QUIT

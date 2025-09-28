@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+SYST
+EPRT |1|192.168.1.1|21|
+STOR example.txt
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+QUIT

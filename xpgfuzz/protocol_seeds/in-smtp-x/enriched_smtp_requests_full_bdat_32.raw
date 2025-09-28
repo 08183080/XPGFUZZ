@@ -1,0 +1,14 @@
+EHLO localhost
+250-CHUNKING
+MAIL FROM:<ubuntu@ubuntu>
+250 OK
+RCPT TO:<ubuntu@ubuntu>
+250 Accepted
+BDAT 10 LAST
+250 OK
+DATA
+354 Enter message, ending with "." on a line by itself
+BDAT 5 LAST
+250 OK
+.
+QUIT

@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+SYST
+ADAT some_data
+ACCT
+REIN
+CLNT ProFTPD-test-client
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+QUIT

@@ -1,0 +1,12 @@
+USER ' OR 1=1 --
+PASS fuzzing
+SYST
+HELP
+MKD todeletenow
+XMKD todeletetoo
+LIST
+SIZE todeletenow
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

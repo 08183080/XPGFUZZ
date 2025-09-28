@@ -1,0 +1,14 @@
+AUTH TLS
+USER fuzzingfuzzing
+PASS fuzzing
+SYST
+XPWD
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+QUIT

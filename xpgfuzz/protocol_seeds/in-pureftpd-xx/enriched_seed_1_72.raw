@@ -1,0 +1,15 @@
+USER fuzzing
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+RNFR oldfile.txt
+RNTO newfile.txt
+HELP
+SITE CHMOD 755 newfile.txt
+STAT
+STRU
+QUIT

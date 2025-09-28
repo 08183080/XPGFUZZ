@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+HOST example.com
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+SITE CHMOD 755 /home/ubuntu
+NOOP
+HELP
+STAT
+STRU
+QUIT

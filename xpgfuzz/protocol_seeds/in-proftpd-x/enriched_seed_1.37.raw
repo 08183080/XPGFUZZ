@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+SYST
+ACCT
+REIN
+SMNT
+ADAT some_data_package
+FEAT
+NOOP
+HELP
+STAT
+STRU
+MFF Modify=Create;UNIX.group=wheel
+QUIT

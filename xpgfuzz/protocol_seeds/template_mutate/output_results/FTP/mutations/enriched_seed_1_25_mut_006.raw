@@ -1,0 +1,14 @@
+USER <script>alert(1)</script>
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+REST 0
+SIZE testfile.txt
+NOOP
+HELP
+STAT
+STRU
+QUIT

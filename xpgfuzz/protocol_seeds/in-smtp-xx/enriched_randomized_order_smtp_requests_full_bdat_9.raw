@@ -1,0 +1,14 @@
+EHLO localhost
+NOOP
+MAIL FROM:<"very long email address that certainly exceeds the normal boundary conditions@example.com">
+RSET
+MAIL FROM:<ubuntu@ubuntu>
+RCPT TO:<     ubuntu@ubuntu    >
+NOOP
+ETRN
+BDAT 10 LAST
+.
+BDAT 5 LAST
+NOOP
+RSET
+QUIT

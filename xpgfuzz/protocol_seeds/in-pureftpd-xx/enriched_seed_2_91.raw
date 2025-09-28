@@ -1,0 +1,15 @@
+USER fuzzing
+PASS fuzzing
+MKD test
+CWD test
+PWD
+RNFR oldfile.txt
+RNTO newfile.txt
+TYPE I
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

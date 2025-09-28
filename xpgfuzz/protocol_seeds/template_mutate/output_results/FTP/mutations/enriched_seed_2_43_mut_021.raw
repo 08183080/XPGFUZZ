@@ -1,0 +1,14 @@
+USER f
+PASS fuzzing
+ALLO 1024
+MKD test
+CWD test
+OPTS MLST type;size;modify;UNIX.mode;UNIX.uid;UNIX.gid;
+PWD
+XMKD test2
+XCWD test2
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

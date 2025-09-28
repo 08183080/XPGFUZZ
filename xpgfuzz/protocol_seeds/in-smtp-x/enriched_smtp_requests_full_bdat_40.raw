@@ -1,0 +1,11 @@
+EHLO localhost
+PIPELINING
+MAIL FROM:<sender@example.com>
+RCPT TO:<recipient@example.com>
+DATA
+Subject: Test Message
+Hello, this is a test.
+.
+BDAT 10 LAST
+BDAT 5
+QUIT

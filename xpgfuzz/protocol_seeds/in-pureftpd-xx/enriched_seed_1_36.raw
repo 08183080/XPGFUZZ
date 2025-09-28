@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+NLST /home/fuzzing
+FEAT
+NOOP
+RNFR /home/fuzzing/oldfile.txt
+HELP
+STAT
+STRU
+QUIT

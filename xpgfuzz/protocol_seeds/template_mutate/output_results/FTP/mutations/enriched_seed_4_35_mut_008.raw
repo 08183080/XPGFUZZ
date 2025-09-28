@@ -1,0 +1,12 @@
+USER fuzzingfuzzing
+PASS fuzzing
+SYST
+MKD todeletenow
+XMKD todeletetoo
+LIST
+APPE testfile.txt
+SITE CHMOD 755 testfile.txt
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

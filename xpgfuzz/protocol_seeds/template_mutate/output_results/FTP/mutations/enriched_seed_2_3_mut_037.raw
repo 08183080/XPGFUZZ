@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+MKD test
+CWD test
+PWD
+STOR /etc/passwd
+XMKD subdir
+XCWD subdir
+XPWD
+RMD subdir
+CDUP
+XCUP
+PWD
+QUIT

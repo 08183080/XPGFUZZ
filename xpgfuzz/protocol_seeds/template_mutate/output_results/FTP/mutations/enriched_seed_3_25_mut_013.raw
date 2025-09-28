@@ -1,0 +1,14 @@
+USER fuzzing
+PASS undefined
+PROT P
+STAT
+PORT 127,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+LIST
+MLST /
+STOU testfile.txt
+STAT
+LIST
+NLST
+MLSD /
+QUIT

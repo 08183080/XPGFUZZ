@@ -1,0 +1,9 @@
+USER anonymous
+PASS ubuntu
+AUTH TLS
+SYST
+PWD
+HELP
+PORT 127,0,0,1,152,193
+LIST
+QUIT

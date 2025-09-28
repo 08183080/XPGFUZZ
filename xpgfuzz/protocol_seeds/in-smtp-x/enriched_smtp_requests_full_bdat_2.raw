@@ -1,0 +1,8 @@
+EHLO localhost
+250-SIZE 52428800
+250-PIPELINING
+MAIL FROM:<ubuntu@ubuntu> SIZE=5120
+RCPT TO:<ubuntu@ubuntu>
+BDAT 10 LAST
+BDAT 5 LAST
+QUIT

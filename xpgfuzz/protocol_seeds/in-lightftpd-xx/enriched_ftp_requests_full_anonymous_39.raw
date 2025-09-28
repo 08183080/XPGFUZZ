@@ -1,0 +1,9 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+DELE file_to_delete.txt
+RNFR old_filename.txt
+PORT 127,0,0,1,152,193
+LIST
+QUIT

@@ -1,0 +1,16 @@
+USER fuzzing
+PASS fuzzing
+STAT
+MKD /test_directory
+PORT 127,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+LIST
+MLST /
+STOR /test_directory/sample.txt
+STAT
+LIST
+NLST
+MLSD /
+MKD /another_directory
+STOR /another_directory/sample2.txt
+QUIT

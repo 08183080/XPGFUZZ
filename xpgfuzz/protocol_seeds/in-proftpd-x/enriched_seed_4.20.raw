@@ -1,0 +1,12 @@
+USER ubuntu
+PASS ubuntu
+SYST
+PORT 192,168,1,1,200,100
+MLST todeletenow
+MKD todeletenow
+XMKD todeletetoo
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

@@ -1,0 +1,16 @@
+USER ubuntu
+PASS ubuntu
+SYST
+CCC
+MIC
+CSID utf-8
+MKD todeletenow
+XMKD todeletetoo
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+CCC
+MIC
+CSID utf-8
+QUIT

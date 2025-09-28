@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+SYST
+ACCT
+PROT P
+REIN
+SMNT
+FEAT
+NOOP
+MLST /home/ubuntu/
+HELP
+STAT
+STRU
+QUIT

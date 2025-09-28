@@ -1,0 +1,16 @@
+EHLO localhost
+MAIL FROM:<ubuntu@ubuntu>
+RCPT TO:<ubuntu@ubuntu>
+BDAT 10
+.
+BDAT 5
+RSET
+MAIL FROM:<test@example.com>
+RCPT TO:<test@example.com>
+DSN ENVID=12345 RET=HDRS
+RSET
+MAIL FROM:<longemailaddress@example.com>
+RCPT TO:<longemailaddress@example.com>
+BDAT 10 LAST
+.
+QUIT

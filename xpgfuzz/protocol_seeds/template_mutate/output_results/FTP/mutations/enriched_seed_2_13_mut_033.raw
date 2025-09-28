@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+MKD test
+CWD ' OR 1=1 --
+PWD
+APPE file1.txt
+RETR file1.txt
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

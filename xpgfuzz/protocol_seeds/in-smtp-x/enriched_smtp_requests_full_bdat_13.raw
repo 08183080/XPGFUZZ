@@ -1,0 +1,9 @@
+EHLO localhost
+DSN ENVID=12345
+VRFY ubuntu@ubuntu
+MAIL FROM:<ubuntu@ubuntu> ENVID=12345 RET=FULL
+RCPT TO:<ubuntu@ubuntu> NOTIFY=SUCCESS,FAILURE ORCPT=rfc822;ubuntu@ubuntu
+BDAT 10
+.
+BDAT 5
+QUIT

@@ -1,0 +1,15 @@
+USER ubuntu
+PASS ubuntu
+MKD test
+CWD test
+PWD
+NLST
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+MIC /path/to/file/with%%%special&*characters
+MFMT 202010101010 /extremely/long/path/that/keeps/going/on/and/on/and/on/and/on/and/on/and/on/and/on/and/finally/ends
+QUIT

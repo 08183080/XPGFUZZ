@@ -1,0 +1,12 @@
+USER fuzzing
+PASS fuzzing
+SYST
+MDTM 202109120730
+MKD todeletenow
+XMKD todeletetoo
+LIST
+SITE UTIME 202109120730 /todeletenow
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+OPTS MLST type;size;modify;UNIX.mode;
+FEAT
+SITE CHMOD 755
+NOOP
+HELP
+STAT
+STRU
+QUIT

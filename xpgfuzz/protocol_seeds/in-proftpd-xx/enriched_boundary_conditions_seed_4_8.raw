@@ -1,0 +1,17 @@
+USER ubuntu
+PASS ubuntu
+ACCT some_account
+SYST
+STRU F
+MKD todeletenow
+XMKD todeletetoo
+EPSV
+LIST
+STRU L
+RMD todeletenow
+XRMD todeletetoo
+LIST
+ACCT another_account
+EPSV
+STRU P
+QUIT

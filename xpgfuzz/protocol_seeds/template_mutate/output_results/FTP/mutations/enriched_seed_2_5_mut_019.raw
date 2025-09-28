@@ -1,0 +1,15 @@
+USER fuzzing
+PASS undefined
+HELP
+MKD test
+CWD test
+PWD
+CCC
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+HELP commands
+QUIT

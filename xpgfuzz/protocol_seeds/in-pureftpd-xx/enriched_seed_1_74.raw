@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+SYST
+MKD /test_directory
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+SITE UTIME 20210101123000 /test_directory
+QUIT

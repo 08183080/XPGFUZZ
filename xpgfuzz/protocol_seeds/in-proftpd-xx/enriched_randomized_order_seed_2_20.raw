@@ -1,0 +1,18 @@
+USER ubuntu
+PASS ubuntu
+APPE longfilename_with_special_char_@#!.txt
+MLSD /very/very/long/path/to/directory/with/white space/
+LIST
+MKD test
+CWD test
+PWD
+LIST
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+MLSD
+LIST
+QUIT

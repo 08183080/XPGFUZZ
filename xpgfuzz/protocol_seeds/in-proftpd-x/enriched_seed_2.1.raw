@@ -1,0 +1,15 @@
+USER ubuntu
+PASS ubuntu
+MKD test
+CWD test
+PWD
+OPTS UTF8 ON
+NLST
+XMKD test2
+XCWD test2
+XPWD
+CDUP
+XCUP
+PWD
+NLST -al
+QUIT

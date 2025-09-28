@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+SYST
+OPTS MLST type;size;modify;perm;
+ACCT
+REIN
+SMNT
+FEAT
+SITE CHMOD 755 /home/fuzzing
+NOOP
+HELP
+STAT
+STRU
+QUIT

@@ -1,0 +1,12 @@
+USER ubuntu
+PASS ubuntu
+SYST
+EPSV
+MKD todeletenow
+XMKD todeletetoo
+OPTS UTF8 ON
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

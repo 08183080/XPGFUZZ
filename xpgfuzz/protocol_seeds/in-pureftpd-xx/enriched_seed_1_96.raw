@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+SITE CHMOD 755 /home/fuzzing
+SITE UTIME 20210101123000 /home/fuzzing
+STRU
+QUIT

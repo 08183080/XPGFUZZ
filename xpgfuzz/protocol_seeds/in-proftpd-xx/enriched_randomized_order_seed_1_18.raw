@@ -1,0 +1,18 @@
+USER ubuntu
+PASS ubuntu
+PWD
+MFF modify;UNIX.group=staff; /path/to/file/with␣spaces
+CLNT ProFTPD-test-client
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT /extremely/long/path/that/does/not/actually/exist/or/it/might/exist/let's/find/out
+STRU
+PWD
+CLNT another-client
+MFF create;UNIX.mode=0644; /another/path/©specialfile
+QUIT

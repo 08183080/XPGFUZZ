@@ -1,0 +1,11 @@
+EHLO localhost
+PIPELINING
+MAIL FROM:<ubuntu@veryverylongdomainnameexample.com>
+RCPT TO:<"  unusual@space.com  ">
+ETRN
+RCPT TO:<normal@address.com>
+BDAT 10
+.
+BDAT 5 LAST
+PIPELINING
+QUIT

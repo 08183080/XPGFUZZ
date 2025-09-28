@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+AUTH TLS
+MKD test
+CWD test
+PWD
+RETR file.txt
+XMKD test
+XCWD <script>alert(1)</script>
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

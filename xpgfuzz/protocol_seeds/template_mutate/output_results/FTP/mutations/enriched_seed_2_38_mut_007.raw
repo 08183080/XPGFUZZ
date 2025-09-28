@@ -1,0 +1,14 @@
+USER fuzzingfuzzing
+PASS fuzzing
+MKD test
+CWD test
+PWD
+STOU uniquefile.txt
+XRMD test
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

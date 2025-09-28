@@ -1,0 +1,15 @@
+USER fuzzing
+PASS fuzzing
+STAT
+PORT 1,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+MKD testdir
+XCWD testdir
+LIST
+MLST /
+STAT
+XCWD /
+LIST
+NLST
+MLSD /
+QUIT

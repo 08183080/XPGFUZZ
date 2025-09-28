@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+MKD test
+CWD test
+PWD
+LIST
+MFF modify;UNIX.group=users; test
+XMKD test2
+XCWD test2
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

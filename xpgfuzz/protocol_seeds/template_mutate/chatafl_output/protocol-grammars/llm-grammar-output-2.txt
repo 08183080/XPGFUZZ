@@ -1,0 +1,23 @@
+FTP/proftpd does not have a standardized request format like RTSP or HTTP. However, common FTP client requests typically include commands like USER, PASS, LIST, RETR, STOR, etc. Each of these commands serves a specific function in the FTP protocol. Here are some examples of FTP client requests:
+
+1. USER: ["USER <<VALUE>>\r\n"]
+2. PASS: ["PASS <<VALUE>>\r\n"]
+3. LIST: ["LIST <<VALUE>>\r\n"]
+4. RETR: ["RETR <<VALUE>>\r\n"]
+5. STOR: ["STOR <<VALUE>>\r\n"]
+
+These are just a few examples, and there are many other FTP commands that can be used in client requests depending on the specific actions you want to perform on the FTP server.
+Here are some additional examples of FTP client request templates for the proftpd protocol:
+
+1. CWD (Change Working Directory): ["CWD <<VALUE>>\r\n"]
+2. MKD (Make Directory): ["MKD <<VALUE>>\r\n"]
+3. RMD (Remove Directory): ["RMD <<VALUE>>\r\n"]
+4. DELE (Delete File): ["DELE <<VALUE>>\r\n"]
+5. RNFR (Rename From): ["RNFR <<VALUE>>\r\n"]
+6. RNTO (Rename To): ["RNTO <<VALUE>>\r\n"]
+7. TYPE (Set Transfer Type): ["TYPE <<VALUE>>\r\n"]
+8. PASV (Passive Mode): ["PASV\r\n"]
+9. PORT (Active Mode): ["PORT <<VALUE>>\r\n"]
+10. ABOR (Abort Transfer): ["ABOR\r\n"]
+
+These are just a few more examples of FTP client request templates that can be used with the proftpd protocol to perform various operations on an FTP server. Each command serves a specific purpose in managing file transfers and interactions with the server.

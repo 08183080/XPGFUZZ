@@ -1,0 +1,17 @@
+USER ubuntu
+PASS ubuntu
+TYPE I
+SYST
+RNTO /long-directory-name-with-special-characters-@@-###-%%%/
+STAT
+PORT 127,0,0,1,14,178
+EPRT |2|0:0:0:0:0:0:0:0|1025|
+LIST
+MLST /
+TYPE A
+STAT
+LIST
+NLST
+MLSD /
+RNTO /          /
+QUIT

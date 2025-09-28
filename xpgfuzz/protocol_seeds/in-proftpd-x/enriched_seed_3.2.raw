@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+STAT
+PORT 127,0,0,1,14,178
+EPRT |2|0:0:0:0:0:0:0:0|1025|
+PBSZ 0
+LIST
+MLST /
+APPE newfile.txt
+STAT
+LIST
+NLST
+MLSD /
+QUIT

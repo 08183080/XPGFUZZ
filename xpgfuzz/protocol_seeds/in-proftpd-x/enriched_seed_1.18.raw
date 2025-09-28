@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+SYST
+CSID UTF-8
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+MFF Modify;UNIX.group=staff;UNIX.mode=0644;
+STAT
+STRU
+QUIT

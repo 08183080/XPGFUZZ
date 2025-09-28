@@ -1,0 +1,12 @@
+USER fuzzing
+PASS fuzzing
+SYST
+MKD todeletenow
+XMKD todeletetoo
+OPTS MLST type;size;modify;UNIX.mode;UNIX.uid;UNIX.gid;
+LIST
+ESTA
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

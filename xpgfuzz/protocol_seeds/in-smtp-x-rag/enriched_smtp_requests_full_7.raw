@@ -1,0 +1,7 @@
+EHLO localhost
+MAIL FROM:<ubuntu@ubuntu> SIZE=500000
+RCPT TO:<ubuntu@ubuntu> NOTIFY=SUCCESS,FAILURE
+DATA
+abc
+.
+QUIT

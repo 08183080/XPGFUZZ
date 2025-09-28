@@ -1,0 +1,18 @@
+USER ubuntu
+PASS ubuntu
+LANG en-US
+MKD test
+CWD test
+PWD
+XMKD test@!#$%^&*()
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+LANG fr-FR
+ABOR
+RMD test
+RMD test@!#$%^&*()
+QUIT
+ABOR

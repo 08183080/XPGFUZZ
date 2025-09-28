@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+PBSZ 0
+MKD test
+CWD test
+PWD
+XMKD test
+XCWD test
+XPWD
+MFF modify;UNIX.mode=0755; test
+CDUP
+XCUP
+PWD
+QUIT

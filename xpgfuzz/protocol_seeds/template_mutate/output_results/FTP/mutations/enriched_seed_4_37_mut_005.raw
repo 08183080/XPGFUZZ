@@ -1,0 +1,13 @@
+USER fuzzing
+PASS f
+SYST
+MKD todeletenow
+XMKD todeletetoo
+LIST
+SIZE todeletenow
+RNFR todeletenow
+RNTO newname
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

@@ -1,0 +1,15 @@
+EHLO localhost
+RSET
+MAIL FROM:<verylongemailaddress@example.com             >
+RSET
+RCPT TO:<ubuntu@ubuntu>
+NOOP
+DATA
+Subject: Test email 😊
+From: "Sender Name" <sender@example.com>
+To: "Receiver Name" <receiver@example.com>
+
+This is a test message with special character 😊 and unusual symbols $%&*.
+
+.
+QUIT

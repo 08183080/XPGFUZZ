@@ -1,0 +1,11 @@
+EHLO localhost
+SIZE 5000000
+VRFY ubuntu@ubuntu
+MAIL FROM:<ubuntu@ubuntu> SIZE=1500
+RCPT TO:<ubuntu@ubuntu>
+DATA
+Subject: Test Email
+
+This is a test email.
+.
+QUIT

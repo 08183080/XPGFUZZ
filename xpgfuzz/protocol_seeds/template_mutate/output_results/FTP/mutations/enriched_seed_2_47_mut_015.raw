@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+MKD test
+CWD tset
+PWD
+MLSD
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+SITE IDLE 300
+QUIT

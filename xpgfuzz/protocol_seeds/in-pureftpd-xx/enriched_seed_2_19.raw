@@ -1,0 +1,15 @@
+USER fuzzing
+PASS fuzzing
+MKD test
+CWD test
+PWD
+RNFR oldfile.txt
+RNTO newfile.txt
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+SITE UTIME 20210101123000 testfile.txt
+QUIT

@@ -1,0 +1,16 @@
+USER fuzzing
+PASS fuzzing
+STAT
+PASV
+SIZE /testfile.txt
+PORT 127,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+LIST
+MLST /
+PASV
+SIZE /exampledir
+STAT
+LIST
+NLST
+MLSD /
+QUIT

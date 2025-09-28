@@ -1,0 +1,15 @@
+USER ' OR 1=1 --
+PASS fuzzing
+AUTH TLS
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+RNFR oldfile.txt
+RNTO newfile.txt
+HELP
+STAT
+STRU
+QUIT

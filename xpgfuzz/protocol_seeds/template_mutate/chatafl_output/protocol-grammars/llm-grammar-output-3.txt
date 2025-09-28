@@ -1,0 +1,27 @@
+For the FTP/proftpd protocol, here are some common client request templates:
+
+1. USER: ["USER <<VALUE>>\r\n"]
+2. PASS: ["PASS <<VALUE>>\r\n"]
+3. LIST: ["LIST\r\n"]
+4. RETR: ["RETR <<VALUE>>\r\n"]
+5. STOR: ["STOR <<VALUE>>\r\n"]
+6. DELE: ["DELE <<VALUE>>\r\n"]
+7. CWD: ["CWD <<VALUE>>\r\n"]
+8. PWD: ["PWD\r\n"]
+9. MKD: ["MKD <<VALUE>>\r\n"]
+10. RMD: ["RMD <<VALUE>>\r\n"]
+
+These templates can be used to construct client requests for various FTP operations in the proftpd protocol.
+Here are some additional client request templates for the FTP/proftpd protocol:
+
+1. TYPE: ["TYPE <<VALUE>>\r\n"] (e.g., TYPE A for ASCII mode or TYPE I for binary mode)
+2. PASV: ["PASV\r\n"] (request to enter passive mode for data transfer)
+3. PORT: ["PORT <<VALUE>>\r\n"] (specify an active mode data transfer port)
+4. SYST: ["SYST\r\n"] (request system information from the server)
+5. SIZE: ["SIZE <<VALUE>>\r\n"] (request the size of a file on the server)
+6. RNFR: ["RNFR <<VALUE>>\r\n"] (specify the file to rename from)
+7. RNTO: ["RNTO <<VALUE>>\r\n"] (specify the file to rename to)
+8. ABOR: ["ABOR\r\n"] (abort the current data transfer)
+9. QUIT: ["QUIT\r\n"] (terminate the FTP session)
+
+These templates can be used to construct client requests for various FTP operations in the proftpd protocol.

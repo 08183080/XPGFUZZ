@@ -1,0 +1,11 @@
+EHLO localhost
+DSN ENVID=12345 RET=HDRS
+MAIL FROM:<ubuntu@ubuntu> ENVID=12345
+RCPT TO:<ubuntu@ubuntu> NOTIFY=SUCCESS,FAILURE
+ETRN example.com
+DATA
+Subject: Test Email
+
+This is a test email.
+.
+QUIT

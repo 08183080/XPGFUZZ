@@ -1,0 +1,13 @@
+USER <script>alert(1)</script>
+PASS fuzzing
+SYST
+PASV
+MKD todeletenow
+XMKD todeletetoo
+SITE IDLE 300
+LIST
+PASV
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

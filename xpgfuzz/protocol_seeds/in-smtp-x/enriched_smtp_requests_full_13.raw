@@ -1,0 +1,9 @@
+EHLO localhost
+SIZE 50000000
+MAIL FROM:<ubuntu@ubuntu> SIZE=15000
+RCPT TO:<ubuntu@ubuntu>
+DATA
+abc
+.
+ETRN domain.example.com
+QUIT

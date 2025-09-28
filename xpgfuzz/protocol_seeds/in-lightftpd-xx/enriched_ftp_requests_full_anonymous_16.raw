@@ -1,0 +1,9 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+SIZE testfile.txt
+PORT 127,0,0,1,152,193
+RETR testfile.txt
+LIST
+QUIT

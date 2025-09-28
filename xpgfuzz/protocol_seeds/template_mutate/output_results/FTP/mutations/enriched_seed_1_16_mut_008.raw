@@ -1,0 +1,14 @@
+USER fuzzingfuzzing
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+XMKD testdir
+RNFR testdir
+QUIT

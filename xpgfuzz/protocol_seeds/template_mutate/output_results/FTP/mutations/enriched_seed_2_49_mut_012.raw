@@ -1,0 +1,14 @@
+USER fuzzing
+PASS gnizzuf
+MKD test
+CWD test
+PWD
+OPTS MLST type;size;modify;UNIX.mode;UNIX.uid;UNIX.gid;
+XMKD test2
+XCWD test2
+XPWD
+STOR file.txt
+CDUP
+XCUP
+PWD
+QUIT

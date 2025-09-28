@@ -1,0 +1,15 @@
+USER fuzzing
+PASS fuzzing
+SYST
+CWD /home/fuzzing
+MKD todeletenow
+XMKD todeletetoo
+LIST
+CWD /home/fuzzing/todeletenow
+STAT /home/fuzzing/todeletenow
+RMD todeletenow
+CWD %s%s%s%n%n
+XRMD todeletetoo
+STAT /home/fuzzing
+LIST
+QUIT

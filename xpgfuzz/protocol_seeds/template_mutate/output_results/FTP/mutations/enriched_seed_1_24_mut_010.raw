@@ -1,0 +1,14 @@
+USER ../../../../../../../../../../
+PASS fuzzing
+AUTH TLS
+SYST
+ALLO 1024
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+QUIT

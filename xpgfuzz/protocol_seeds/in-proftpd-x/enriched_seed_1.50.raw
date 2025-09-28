@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+RNFR oldfile.txt
+ABOR
+HELP
+STAT
+STRU
+QUIT

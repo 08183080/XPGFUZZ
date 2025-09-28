@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+MODE S
+MKD test
+CWD test
+PWD
+SIZE test/file.txt
+XMKD test2
+XCWD test2
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

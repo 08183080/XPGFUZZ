@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+CCC
+MKD test
+CWD test
+PWD
+EPRT |1|192.0.2.1|21|
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

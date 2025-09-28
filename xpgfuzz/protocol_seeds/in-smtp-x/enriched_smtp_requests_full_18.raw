@@ -1,0 +1,23 @@
+EHLO localhost
+MAIL FROM:<ubuntu@ubuntu>
+RCPT TO:<ubuntu@ubuntu>
+DATA
+abc
+.
+QUIT
+EHLO localhost
+CHUNKING
+MAIL FROM:<test@example.com>
+RCPT TO:<test@example.com>
+BDAT 12 LAST
+abc
+QUIT
+EHLO localhost
+PIPELINING
+MAIL FROM:<user@example.com>
+RCPT TO:<user@example.com>
+RCPT TO:<info@example.com>
+DATA
+Hello
+.
+QUIT

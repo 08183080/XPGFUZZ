@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+CCC
+MKD test
+CWD ' OR 1=1 --
+MFMT 20210101123000 test
+PWD
+XMKD test2
+XCWD test2
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

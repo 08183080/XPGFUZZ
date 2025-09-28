@@ -1,0 +1,17 @@
+USER ubuntu
+PASS ubuntu
+MKD test
+CWD test
+MDTM 20201010121212 test
+PWD
+MIC Zm9vIGJhciBiYXo= test
+MLSD
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+MLSD /some/very/long/path/with/many/subdirectories/and/more/and/more/and/more/and/more test
+MIC Zm9vIGJhc m9yZSBzcGVjaWFsIGNoYXJhY3RlcnMgISQqJCVeJiooKT8= test
+QUIT

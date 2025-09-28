@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+STAT
+PORT 127,MUTATED_ANY
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+LIST
+MLST /
+RNFR oldfile.txt
+STOR newfile.txt
+STAT
+LIST
+NLST
+MLSD /
+QUIT

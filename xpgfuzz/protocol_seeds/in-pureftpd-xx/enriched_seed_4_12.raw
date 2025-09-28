@@ -1,0 +1,12 @@
+USER fuzzing
+PASS fuzzing
+SYST
+EPRT |1|192.168.1.1|21|
+MKD todeletenow
+XMKD todeletetoo
+NLST
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

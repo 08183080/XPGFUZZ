@@ -1,0 +1,40 @@
+DESCRIBE rtsp://127.0.0.1:8554/wavAudioTest RTSP/1.0
+CSeq: 2
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Accept: application/sdp
+
+ANNOUNCE rtsp://127.0.0.1:8554/wavAudioTest RTSP/1.0
+CSeq: 3
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Content-Type: application/sdp
+Content-Length: 276
+Content: v=0
+o=- 2890844526 2890842807 IN IP4 127.0.0.1
+s=RTSP Session
+c=IN IP4 127.0.0.1
+t=0 0
+m=audio 0 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+
+SETUP rtsp://127.0.0.1:8554/wavAudioTest/track1 RTSP/1.0
+CSeq: 4
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Transport: RTP/AVP;unicast;client_port=37952-37953
+
+SET_PARAMETER rtsp://127.0.0.1:8554/wavAudioTest RTSP/1.0
+CSeq: 5
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+Content-Type: text/parameters
+Parameter: volume=60
+
+PLAY rtsp://127.0.0.1:8554/wavAudioTest/ RTSP/1.0
+CSeq: 6
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+Range: npt=0.000-
+
+TEARDOWN rtsp://127.0.0.1:8554/wavAudioTest/ RTSP/1.0
+CSeq: 7
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8

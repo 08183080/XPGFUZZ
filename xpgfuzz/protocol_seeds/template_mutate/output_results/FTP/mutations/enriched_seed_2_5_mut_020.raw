@@ -1,0 +1,15 @@
+USER fuzzing
+PASS fuzzing
+HELP
+MKD test
+CWD ' OR 1=1 --
+PWD
+CCC
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+HELP commands
+QUIT

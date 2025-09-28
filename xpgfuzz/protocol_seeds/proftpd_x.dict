@@ -1,0 +1,188 @@
+##############################
+# ProFTPD AFL++ Dictionary
+# 含命令+参数组合
+##############################
+
+# === 基础命令 ===
+"USER "
+"PASS "
+"ACCT "
+"CWD "
+"XCWD "
+"CDUP"
+"XCUP"
+"SMNT "
+"REIN"
+"QUIT"
+
+"PORT "
+"EPRT "
+"PASV"
+"EPSV"
+"TYPE "
+"STRU "
+"MODE "
+
+"RETR "
+"STOR "
+"STOU"
+"APPE "
+"ALLO "
+"REST "
+
+"RNFR "
+"RNTO "
+"ABOR"
+"DELE "
+"MDTM "
+
+"RMD "
+"XRMD "
+"MKD "
+"XMKD "
+"PWD"
+"XPWD"
+
+"SIZE "
+"LIST "
+"NLST "
+"SITE "
+"SYST"
+"STAT "
+"HELP"
+"NOOP"
+
+"FEAT"
+"OPTS "
+"LANG "
+"HOST "
+"CLNT "
+"RANG "
+"CSID "
+
+"MLSD"
+"MLST "
+"ADAT "
+
+# === SITE 子命令 ===
+"SITE CHGRP "
+"SITE CHMOD "
+"SITE HELP"
+"SITE UTIME "
+"SITE MKDIR "
+"SITE RMDIR "
+"SITE SYMLINK "
+"SITE CPFR "
+"SITE CPTO "
+
+# === 命令 + 参数组合 ===
+# TYPE
+"TYPE A"
+"TYPE E"
+"TYPE I"
+"TYPE L 8"
+"TYPE L 16"
+"TYPE L 32"
+
+# MODE
+"MODE S"
+"MODE B"
+"MODE C"
+
+# STRU
+"STRU F"
+"STRU R"
+"STRU P"
+
+# OPTS
+"OPTS MLST"
+"OPTS UTF8 ON"
+"OPTS UTF8 OFF"
+
+# FEAT 扩展
+"FEAT MDTM"
+"FEAT SIZE"
+"FEAT REST STREAM"
+"FEAT MLST"
+"FEAT MLSD"
+"FEAT TVFS"
+"FEAT UTF8"
+"FEAT LANG"
+"FEAT HOST"
+"FEAT CLNT"
+"FEAT RANG"
+
+# === 响应码 (服务器端常见) ===
+"200"
+"220"
+"221"
+"226"
+"227"
+"229"
+"230"
+"250"
+"257"
+"331"
+"332"
+"350"
+"421"
+"425"
+"426"
+"450"
+"451"
+"452"
+"500"
+"501"
+"502"
+"503"
+"504"
+"530"
+"532"
+"550"
+"551"
+"552"
+"553"
+
+# === 协议分隔符 ===
+"\r\n"
+" "
+","
+";"
+"|"
+"-"
+"="
+
+# === 路径与文件关键字 ===
+"/"
+"\\"
+"."
+".."
+"~"
+"*"
+"?"
+"index.html"
+"test.txt"
+"upload.bin"
+"../../etc/passwd"
+
+# === 编码与字符集 ===
+"UTF-8"
+"ASCII"
+"ISO-8859-1"
+"EBCDIC"
+
+# === 模糊测试特殊值 ===
+""                  # 空字符串
+"A"*1024            # 超长字符串
+"\x00"
+"\x0A"
+"\x0D"
+"\xFF"
+"\u0000"
+"\uFFFF"
+
+# 路径遍历 / 注入测试
+"../../../etc/passwd"
+"%2e%2e%2f"
+"..%2f..%2f..%2fetc/passwd"
+"\x90\x90\x90\x90"

@@ -1,0 +1,16 @@
+USER fuzzing
+PASS fuzzing
+STAT
+SIZE /example.txt
+REST 0
+PORT 127,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+LIST
+MLST /
+REST 100
+SIZE /example.txt
+STAT
+LIST
+NLST
+MLSD /
+QUIT

@@ -1,0 +1,86 @@
+For the FTP/proftpd protocol, the client request templates can vary based on the specific action being performed. Here are some common FTP client request templates:
+
+1. **LIST Command:**
+```
+LIST
+```
+
+2. **RETR Command (Retrieve a file):**
+```
+RETR <<FILENAME>>
+```
+
+3. **STOR Command (Store a file on the server):**
+```
+STOR <<FILENAME>>
+```
+
+4. **DELE Command (Delete a file):**
+```
+DELE <<FILENAME>>
+```
+
+5. **MKD Command (Make a directory):**
+```
+MKD <<DIRECTORY_NAME>>
+```
+
+6. **RMD Command (Remove a directory):**
+```
+RMD <<DIRECTORY_NAME>>
+```
+
+7. **PWD Command (Print working directory):**
+```
+PWD
+```
+
+8. **CWD Command (Change working directory):**
+```
+CWD <<DIRECTORY_NAME>>
+```
+
+These are just a few examples of FTP client request templates. The actual commands used in FTP communication can vary depending on the specific actions required by the client.
+Here are some additional client request templates commonly used in the FTP/proftpd protocol:
+
+1. **USER Command (Specify username):**
+```
+USER <<USERNAME>>
+```
+
+2. **PASS Command (Specify password):**
+```
+PASS <<PASSWORD>>
+```
+
+3. **TYPE Command (Set transfer type - ASCII or binary):**
+```
+TYPE <<TYPE>>
+```
+
+4. **PASV Command (Enter passive mode for data transfer):**
+```
+PASV
+```
+
+5. **PORT Command (Specify an active mode data transfer port):**
+```
+PORT <<IP_ADDRESS,PORT>>
+```
+
+6. **SYST Command (Get system information of the server):**
+```
+SYST
+```
+
+7. **SIZE Command (Get the size of a file):**
+```
+SIZE <<FILENAME>>
+```
+
+8. **ABOR Command (Abort the current data transfer):**
+```
+ABOR
+```
+
+These additional client request templates provide more functionality and control over the FTP/proftpd communication process. Depending on the specific requirements and interactions with the FTP server, different commands can be used to achieve various operations.

@@ -1,0 +1,287 @@
+# =========================
+# Pure-FTPd AFLNet 强化字典
+# 说明：
+# - 采用“命令”“分隔符”“参数碎片”“边界常量”“毒素”分层。
+# - 命令大多提供两种：不带空格（无参）与带尾随空格（需参）。
+# - CRLF/空格/分隔符单独列出，方便重组。
+# =========================
+
+# ---- 基本分隔符与控制 ----
+"\r\n"
+"\n"
+" "
+","
+";"
+"|"
+"("
+")"
+"["
+"]"
+"="
+":"
+"*"
+"/"
+"\\"
+"."
+".."
+"./"
+"../"
+"/./"
+"/../"
+"~"
+"\""
+"'"
+"\x00"
+"\x01"
+"\x02"
+"\x03"
+"\x07"     # BEL
+"\x08"     # BS
+"\x09"     # TAB
+"\x0b"     # VT
+"\x0c"     # FF
+"\x7f"     # DEL
+"\xff"     # IAC (TELNET)
+
+# ---- 会话/认证 ----
+"USER"
+"USER "
+"PASS"
+"PASS "
+"ACCT"
+"ACCT "
+"QUIT"
+"QUIT "      # 畸形：带空格
+"NOOP"
+
+# ---- 功能与信息 ----
+"FEAT"
+"SYST"
+"HELP"
+"HELP "
+"STAT"
+"STAT "
+"OPTS "
+"OPTS MLST "
+"OPTS UTF8 ON"
+"OPTS UTF8 OFF"
+
+# ---- 目录&文件 ----
+"CWD"
+"CWD "
+"XCWD "
+"CDUP"
+"XCUP"
+"PWD"
+"XPWD"
+"MKD "
+"XMKD "
+"RMD "
+"XRMD "
+"DELE "
+
+# 许多构建支持：重命名/尺寸/时间查询（高命中点）
+"RNFR "
+"RNTO "
+"SIZE "
+"MDTM "
+"MFMT "
+"MFMT 199409231601.26 "       # 典型格式
+"MFMT 19700101000000 "        # Epoch边界
+"MFMT 99991231235959 "        # 上界
+
+# ---- 列表 ----
+"LIST"
+"LIST "
+"LIST -al"
+"LIST -la"
+"LIST -R"
+"NLST"
+"NLST "
+"MLST"
+"MLST "
+"MLSD"
+"MLSD "
+
+# ---- 传输控制 ----
+"RETR "
+"STOR "
+"APPE "
+"STOU"
+"STOU "
+"ABOR"
+"ABOR "             # 畸形
+
+"REST "
+"REST 0"
+"REST 1"
+"REST 2147483647"
+"REST 4294967295"
+"REST 9223372036854775807"
+"REST 18446744073709551615"
+
+"TYPE "
+"TYPE A"
+"TYPE I"
+"TYPE L 8"
+"TYPE L 0"          # 畸形
+
+"MODE "
+"MODE S"
+"MODE B"
+"MODE C"
+
+"STRU "
+"STRU F"
+"STRU R"
+"STRU P"
+
+"ALLO "
+"ALLO 0"
+"ALLO 1"
+"ALLO 2147483647"
+"ALLO 4294967295"
+"ALLO 18446744073709551615"
+"ALLO 123 R 0"      # 含记录参数
+
+# ---- 连接（主动/被动/扩展） ----
+"PORT "
+"PORT 127,0,0,1,7,138"        # 1930
+"PORT 0,0,0,0,0,0"            # 全零
+"PORT 255,255,255,255,255,255"
+"PORT 127,0,0,1,0,0"          # 端口0
+"PORT 127,0,0,1,255,255"      # 65535
+
+"PASV"
+"PASV "
+
+"EPRT "
+"EPRT |1|127.0.0.1|21|"
+"EPRT |1|0.0.0.0|0|"
+"EPRT |1|255.255.255.255|65535|"
+"EPRT |2|::1|21|"
+"EPRT |2|::|0|"
+"EPRT ||||"                    # 畸形分隔
+"EPRT |9|bad|bad|"            # 未知地址族
+
+"EPSV"
+"EPSV "
+"EPSV 1"
+"EPSV 2"
+"EPSV ALL"
+
+# Pure-FTPd 扩展（常见代理前置）
+"PRET "
+"PRET RETR "
+"PRET STOR "
+"PRET LIST "
+"PRET NLST "
+
+# ---- TLS/SSL（显式） ----
+"AUTH"
+"AUTH "
+"AUTH TLS"
+"AUTH SSL"
+"ADAT "
+"PBSZ"
+"PBSZ "
+"PBSZ 0"
+"PBSZ 2147483647"
+"PROT"
+"PROT "
+"PROT C"
+"PROT S"
+"PROT E"
+"PROT P"
+"CCC"
+
+# ---- SITE 扩展 ----
+"SITE "
+"SITE HELP"
+"SITE CHMOD "
+"SITE CHMOD 000 "
+"SITE CHMOD 0777 "
+"SITE IDLE "
+"SITE IDLE 0"
+"SITE IDLE 999999999"
+"SITE TIME"
+"SITE UTIME "
+"SITE UTIME 20000101000000 "
+"SITE UTIME 99991231235959 "
+
+# ---- MLST/MLSD 事实选项（通过 OPTS MLST 设置）----
+"type;"
+"size;"
+"perm;"
+"modify;"
+"unix.mode;"
+"unix.owner;"
+"unix.group;"
+"unique;"
+"media-type;"
+"charset;"
+"lang;"
+"media-type:application/octet-stream;"
+"type=file;"
+"type=dir;"
+"perm=elradfmwT;"
+
+# ---- 常见路径/文件名畸形 ----
+".."
+"../"
+"../../"
+"/../"
+"/../../../../"
+"./././"
+"//"
+"///"
+"/"
+".hidden"
+"."
+"*"
+"?"
+"CON"
+"PRN"
+"NUL"
+"aux"
+"com1"
+"clock$"
+"verylongfilename"
+"verylongfilename................................................................"
+"路径含空 格"
+" space "
+"trailingdot."
+".trailingdot.."
+"unicode-文件名-测试"
+"文件.txt"
+"тест"
+"資料"
+"é"
+"ß"
+"☃"
+
+# ---- 登录常量 ----
+"anonymous"
+"anonymous@"
+"ftp"
+"root"
+"admin"
+"guest"
+"test"
+"%n"
+"%s"
+"%x%x%x%x"
+"AAAAAAAA"
+"AAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"   # 64
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" # 128
+"BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"   # 64
+"../A"
+"A/../B"
+
+# ---- 其他实现开关/调试 ----
+"XDBG"
+"XDBG "
+
+# 结束

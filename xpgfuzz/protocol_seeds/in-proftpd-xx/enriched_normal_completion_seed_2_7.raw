@@ -1,0 +1,21 @@
+USER ubuntu
+PASS ubuntu
+ACCT guest_account
+CSID UTF-8
+LANG en-US
+MKD test
+CWD test
+PWD
+XMKD test_extra_long_directory_name_with_special_characters_!@#$%^&*()
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+ACCT another_account
+CSID ISO-8859-1
+LANG fr-FR
+MKD test space
+CWD test space
+PWD
+QUIT

@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+PASV
+RETR testfile.txt
+FEAT
+NOOP
+HELP
+STAT
+STRU
+QUIT

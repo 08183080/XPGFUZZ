@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+MKD test
+CWD null
+PWD
+STOR file.txt
+XMKD subdir
+XCWD subdir
+XPWD
+RMD subdir
+CDUP
+XCUP
+PWD
+QUIT

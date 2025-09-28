@@ -1,0 +1,17 @@
+EHLO localhost
+RSET
+VRFY ubuntu@ubuntu
+MAIL FROM:<test@example.com>
+RCPT TO:<recipient@example.com>
+DATA
+Subject: Test Email
+Hello, this is a test email.
+.
+RSET
+MAIL FROM:<another@example.com>
+RCPT TO:<different@example.com>
+DATA
+Subject: Another Test
+This is another test email.
+.
+QUIT

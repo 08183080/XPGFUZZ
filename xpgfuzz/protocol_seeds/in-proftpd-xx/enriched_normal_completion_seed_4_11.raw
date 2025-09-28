@@ -1,0 +1,16 @@
+USER ubuntu
+PASS ubuntu
+SYST
+CLNT ProFTPD-test
+SITE CHMOD 755 /home/ubuntu
+MFF modify;UNIX.group=staff; /home/ubuntu/todeletenow
+MKD todeletenow
+XMKD todeletetoo
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+SITE EXEC uptime
+CLNT ProFTPD-special-😊
+MFF create;UNIX.mode=0644; /home/ubuntu/special_file.txt
+QUIT

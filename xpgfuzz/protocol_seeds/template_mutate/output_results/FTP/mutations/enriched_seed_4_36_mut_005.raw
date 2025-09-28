@@ -1,0 +1,13 @@
+USER fuzzing_test
+PASS fuzzing
+SYST
+PBSZ 0
+MKD todeletenow
+XMKD todeletetoo
+SIZE todeletenow
+LIST
+RMD todeletenow
+XRMD todeletetoo
+SIZE todeletetoo
+LIST
+QUIT

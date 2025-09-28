@@ -1,0 +1,15 @@
+USER fuzzing
+PASS fuzzingfuzzing
+SYST
+TYPE A
+ACCT
+REIN
+SMNT
+FEAT
+TYPE I
+NOOP
+RETR file.txt
+HELP
+STAT
+STRU
+QUIT

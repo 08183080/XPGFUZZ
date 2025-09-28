@@ -1,0 +1,28 @@
+For the FTP/proftpd protocol, the client request templates can vary based on the specific command being sent. Here are some common FTP client request templates:
+
+1. USER: ["USER <<VALUE>>\r\n"]
+2. PASS: ["PASS <<VALUE>>\r\n"]
+3. LIST: ["LIST\r\n"]
+4. RETR: ["RETR <<VALUE>>\r\n"]
+5. STOR: ["STOR <<VALUE>>\r\n"]
+6. DELE: ["DELE <<VALUE>>\r\n"]
+7. MKD: ["MKD <<VALUE>>\r\n"]
+8. PWD: ["PWD\r\n"]
+9. CWD: ["CWD <<VALUE>>\r\n"]
+10. QUIT: ["QUIT\r\n"]
+
+These are just a few examples of FTP client request templates for common commands. The actual request templates can vary based on the specific FTP server implementation and the commands supported by the server.
+Here are some additional FTP client request templates for the FTP/proftpd protocol:
+
+1. TYPE: ["TYPE <<VALUE>>\r\n"]
+2. PASV: ["PASV\r\n"]
+3. PORT: ["PORT <<VALUE>>\r\n"]
+4. RNFR: ["RNFR <<VALUE>>\r\n"]
+5. RNTO: ["RNTO <<VALUE>>\r\n"]
+6. ABOR: ["ABOR\r\n"]
+7. APPE: ["APPE <<VALUE>>\r\n"]
+8. CDUP: ["CDUP\r\n"]
+9. SIZE: ["SIZE <<VALUE>>\r\n"]
+10. MODE: ["MODE <<VALUE>>\r\n"]
+
+These templates represent additional client requests that can be sent to an FTP/proftpd server to perform various operations such as changing transfer modes, retrieving file sizes, navigating directories, and more. The specific values to be included in the request templates will depend on the context and the operation being performed.

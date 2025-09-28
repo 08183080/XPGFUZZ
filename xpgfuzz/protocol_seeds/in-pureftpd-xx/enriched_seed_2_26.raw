@@ -1,0 +1,16 @@
+USER fuzzing
+PASS fuzzing
+MKD test
+CWD test
+PWD
+MODE S
+MLST test
+XMKD test2
+XCWD test2
+XPWD
+CDUP
+MODE Z
+MLST test2
+XCUP
+PWD
+QUIT

@@ -1,0 +1,12 @@
+USER ubuntu
+PASS ubuntu
+ACCT guest
+SYST
+MKD todeletenow
+XMKD todeletetoo
+LIST
+RANG 0-100
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

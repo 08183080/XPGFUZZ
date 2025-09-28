@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+SYST
+ACCT
+SITE CHMOD 755 /home/ubuntu
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+XRMD /tmp/old_folder
+QUIT

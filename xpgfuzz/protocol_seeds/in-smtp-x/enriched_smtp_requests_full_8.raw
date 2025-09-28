@@ -1,0 +1,9 @@
+EHLO localhost
+NOOP
+MAIL FROM:<ubuntu@ubuntu> RET=HDRS ENVID=12345
+RCPT TO:<ubuntu@ubuntu> NOTIFY=SUCCESS,FAILURE ORCPT=rfc822;test@example.com
+DATA
+abc
+.
+NOOP
+QUIT

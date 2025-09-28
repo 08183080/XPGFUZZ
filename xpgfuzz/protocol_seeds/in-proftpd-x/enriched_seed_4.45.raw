@@ -1,0 +1,16 @@
+USER ubuntu
+PASS ubuntu
+SYST
+XCWD /home/ubuntu
+XPWD
+MKD todeletenow
+XMKD todeletetoo
+LIST
+XCWD /home/ubuntu/todeletenow
+XPWD
+RMD todeletenow
+XRMD todeletetoo
+LIST
+XCWD /home/ubuntu
+XPWD
+QUIT

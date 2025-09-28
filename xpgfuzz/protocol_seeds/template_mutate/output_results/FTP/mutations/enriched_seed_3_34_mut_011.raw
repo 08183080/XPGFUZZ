@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+STAT
+ESTA
+PORT <script>alert(1)</script>,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+LIST
+MLST /
+XRMD testdir
+STAT
+LIST
+NLST
+MLSD /
+QUIT

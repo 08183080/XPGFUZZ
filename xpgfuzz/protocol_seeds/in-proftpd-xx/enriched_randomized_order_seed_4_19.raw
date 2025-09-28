@@ -1,0 +1,19 @@
+MFMT 202010101010 /path/to/file
+FEAT
+LIST
+ADAT =<|>nonASCIIdata!@#$%^&*()
+USER ubuntu
+PASS ubuntu
+SYST
+MKD todeletenow
+XMKD todeletetoo
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT
+FEAT
+ADAT =<|>verylongaddressverylongaddressverylongaddressverylongaddressverylongaddressverylongaddressverylongaddressverylongaddressverylongaddressverylongaddressverylongaddressverylongaddressverylongaddressverylongaddressverylongaddressverylongaddressverylongaddressverylongaddressverylongaddressverylongaddressverylongaddressverylongaddressverylongaddressverylongaddressverylongaddressverylongaddressverylongaddressverylongaddressverylongaddressverylongaddressverylongaddress
+MFMT 202010101010 /another/path/to/file
+ADAT =<|>whitespace_data     including_tabs
+FEAT

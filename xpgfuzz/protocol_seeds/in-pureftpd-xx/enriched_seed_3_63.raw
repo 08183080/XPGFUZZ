@@ -1,0 +1,15 @@
+USER fuzzing
+PASS fuzzing
+STAT
+PORT 127,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+LIST
+MLST /
+CCC
+RNFR oldname.txt
+RNTO newname.txt
+STAT
+LIST
+NLST
+MLSD /
+QUIT

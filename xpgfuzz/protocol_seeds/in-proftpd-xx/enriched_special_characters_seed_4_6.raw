@@ -1,0 +1,13 @@
+USER ubuntu
+PASS ubuntu
+SYST
+MKD todeletenow
+XMKD todeletetoo
+LIST
+ADAT \200\315\242\255
+RMD todeletenow
+XRMD todeletetoo
+RNTO newname∼longname_______________________________________________________________
+STAT /home/ubuntu/🚀🌟
+LIST
+QUIT

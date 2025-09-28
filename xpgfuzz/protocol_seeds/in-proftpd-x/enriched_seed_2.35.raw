@@ -1,0 +1,17 @@
+USER ubuntu
+PASS ubuntu
+PBSZ 0
+MLST test
+MKD test
+CWD test
+MLST test
+PWD
+XMKD test
+XCWD test
+MLST test
+XPWD
+CDUP
+XCUP
+MLST test
+PWD
+QUIT

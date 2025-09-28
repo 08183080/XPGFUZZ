@@ -1,0 +1,25 @@
+USER ubuntu
+PASS ubuntu
+SYST
+ACCT
+PBSZ 0
+REIN
+CDUP
+SMNT
+OPTS UTF8 ON
+FEAT
+NOOP
+HELP
+PBSZ 1024
+STAT
+STRU F
+OPTS MLST type;size;modify;
+QUIT
+CDUP
+OPTS MODE Z
+PBSZ 2048
+OPTS UTF8 OFF
+STAT /../../../../../../../../etc/passwd
+STRU P
+PBSZ 9999999999
+HELP special_characters!@#$%^&*()-_=+[]{}|;:',.<>/?`~

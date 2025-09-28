@@ -1,0 +1,9 @@
+EHLO localhost
+250-PIPELINING
+250-SIZE 52428800
+MAIL FROM:<ubuntu@ubuntu> SIZE=1024
+RCPT TO:<ubuntu@ubuntu>
+DATA
+abc
+.
+QUIT

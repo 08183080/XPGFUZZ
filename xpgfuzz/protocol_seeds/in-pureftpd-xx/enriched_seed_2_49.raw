@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+MKD test
+CWD test
+PWD
+SITE TIME
+XMKD test2
+XCWD test2
+XPWD
+SITE UTIME 20230724T120000 test2
+CDUP
+XCUP
+PWD
+QUIT

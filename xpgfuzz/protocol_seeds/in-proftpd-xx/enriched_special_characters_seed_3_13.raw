@@ -1,0 +1,17 @@
+USER ubuntu
+PASS ubuntu
+HOST test.example.com
+OPTS UTF8 ON
+STAT
+PORT 127,0,0,1,14,178
+EPRT |2|0:0:0:0:0:0:0:0|1025|
+LIST
+MLST /
+ABOR
+STAT
+LIST
+NLST
+OPTS UTF8 OFF
+MLSD /
+HOST longhostname-verylonghostname-exampleeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.com
+QUIT

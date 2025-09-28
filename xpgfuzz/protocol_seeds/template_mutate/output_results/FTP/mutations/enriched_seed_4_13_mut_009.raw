@@ -1,0 +1,12 @@
+USER ../../../../../../../../../../
+PASS fuzzing
+SYST
+STAT current_status
+MKD todeletenow
+XMKD todeletetoo
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+XDBG debug_info
+QUIT

@@ -1,0 +1,12 @@
+USER ubuntu
+PASS ubuntu
+SYST
+OPTS UTF8 ON
+MKD todeletenow
+XMKD todeletetoo
+LIST
+APPE newfile.txt
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

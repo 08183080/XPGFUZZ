@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+MKD test
+CWD test
+PWD
+EPRT |1|192.168.0.1|21|
+STRU F
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

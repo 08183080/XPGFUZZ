@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+MKD test
+CWD test
+PWD
+SITE CHMOD 755 test
+RANG 0-1024
+XMKD test2
+XCWD test2
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

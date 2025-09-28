@@ -1,0 +1,12 @@
+USER fuzzing
+PASS fuzzing_test
+SYST
+ESTA
+MKD todeletenow
+XMKD todeletetoo
+LIST
+SITE TIME
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

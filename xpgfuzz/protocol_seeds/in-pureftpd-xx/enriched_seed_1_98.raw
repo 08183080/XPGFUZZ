@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+XMKD /test_directory
+FEAT
+NOOP
+XDBG detail
+HELP
+STAT
+STRU
+QUIT

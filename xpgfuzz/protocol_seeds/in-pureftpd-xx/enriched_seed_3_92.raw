@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+HELP
+STAT
+PORT 127,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+LIST
+MLST /
+XRMD /testdir
+STAT
+LIST
+NLST
+MLSD /
+QUIT

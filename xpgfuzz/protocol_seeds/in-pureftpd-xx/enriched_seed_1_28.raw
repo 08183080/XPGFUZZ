@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+SYST
+ACCT
+REST 0
+REIN
+SMNT
+XCWD /home
+FEAT
+NOOP
+HELP
+STAT
+STRU
+QUIT

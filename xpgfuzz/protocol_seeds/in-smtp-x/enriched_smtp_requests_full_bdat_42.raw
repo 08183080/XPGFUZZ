@@ -1,0 +1,10 @@
+EHLO localhost
+STARTTLS
+EHLO localhost
+VRFY user@example.com
+MAIL FROM:<ubuntu@ubuntu>
+RCPT TO:<ubuntu@ubuntu>
+BDAT 10
+.
+BDAT 5
+QUIT

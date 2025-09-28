@@ -1,0 +1,12 @@
+USER fuzzing
+PASS ' OR 1=1 --
+SYST
+OPTS MLST type;size;modify;UNIX.mode;UNIX.uid;UNIX.gid;
+SITE TIME
+MKD todeletenow
+XMKD todeletetoo
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

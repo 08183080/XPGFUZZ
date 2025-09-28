@@ -1,0 +1,4 @@
+DESCRIBE rtsp://<<ip>>:<<port>>/<<value>> RTSP/1.0
+CSeq: <<integer_value>>
+User-Agent: <<stringvalue>> 
+Accept: <<value>>

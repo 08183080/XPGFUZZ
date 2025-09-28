@@ -1,0 +1,16 @@
+USER fuzzing
+PASS fuzzing
+MODE S
+STAT
+PORT 127,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+RETR testfile.txt
+LIST
+MLST /
+MODE B
+STAT
+LIST
+NLST
+RETR anotherfile.txt
+MLSD /
+QUIT

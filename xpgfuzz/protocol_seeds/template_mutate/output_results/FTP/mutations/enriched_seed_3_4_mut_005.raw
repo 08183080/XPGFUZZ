@@ -1,0 +1,16 @@
+USER fuzzingfuzzing
+PASS fuzzing
+MODE S
+STAT
+PORT 127,0,0,1,14,178
+EPRT |2|0:0:0:0:0:0:0:0|1025|
+XCWD /home
+LIST
+MLST /
+STAT
+MODE C
+LIST
+NLST
+XCWD /var
+MLSD /
+QUIT

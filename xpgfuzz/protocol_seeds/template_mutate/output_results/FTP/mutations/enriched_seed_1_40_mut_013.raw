@@ -1,0 +1,14 @@
+USER %s%s%s%n%n
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+DELE file.txt
+XRMD folder
+QUIT

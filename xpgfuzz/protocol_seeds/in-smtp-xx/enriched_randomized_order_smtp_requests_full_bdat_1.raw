@@ -1,0 +1,16 @@
+EHLO localhost
+NOOP
+VRFY user<|>{}@example.com
+STARTTLS
+MAIL FROM:<"very.long.email.address@example.com">
+RCPT TO:<\t>
+BDAT 10
+.
+BDAT 5
+NOOP
+RCPT TO:<normal@example.com>
+MAIL FROM:<"">
+VRFY root
+BDAT 0
+.
+QUIT

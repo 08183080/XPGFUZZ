@@ -1,0 +1,9 @@
+EHLO localhost
+STARTTLS
+MAIL FROM:<verylongemailaddress@example.com   >
+RCPT TO:<ubuntu@ubuntu>
+BDAT 1 LAST
+abc
+BDAT 2 LAST
+.
+QUIT

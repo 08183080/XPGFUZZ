@@ -1,0 +1,12 @@
+USER fuzzing
+PASS fuzzing
+SYST
+MKD todeletenow
+XMKD todeletetoo
+LIST
+RETR examplefile.txt
+SITE CHMOD 755 todeletenow
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

@@ -1,0 +1,13 @@
+USER fuzzing
+PASS ' OR 1=1 --
+SYST
+PASV
+MKD todeletenow
+XMKD todeletetoo
+SITE IDLE 300
+LIST
+PASV
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

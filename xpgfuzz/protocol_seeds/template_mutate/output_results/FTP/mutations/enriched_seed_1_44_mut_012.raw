@@ -1,0 +1,14 @@
+USER ../../../../../../../../../../
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+ESTA
+PASV
+FEAT
+NOOP
+HELP
+STAT
+STRU
+QUIT

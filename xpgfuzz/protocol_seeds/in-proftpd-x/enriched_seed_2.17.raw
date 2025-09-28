@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+ADAT some_data
+MKD test
+CSID session_identifier
+CWD test
+PWD
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+HELP
+MKD test
+CWD testtest
+PWD
+XMKD test2
+XCWD test2
+XPWD
+SITE TIME
+CDUP
+XCUP
+PWD
+QUIT

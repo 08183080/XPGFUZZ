@@ -1,0 +1,18 @@
+USER ubuntu
+PASS ubuntu
+MKD test
+CWD test
+PWD
+XMKD test
+XCWD test
+XPWD
+ADAT \000\001\002
+NLST /../../../../../../../../../../etc/passwd
+MFMT 20220101123000 /../../..//test
+CDUP
+XCUP
+PWD
+QUIT
+NLST
+MFMT 19981231235959 test/./././././././.
+ADAT abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+[]{}|;:',.<>/?

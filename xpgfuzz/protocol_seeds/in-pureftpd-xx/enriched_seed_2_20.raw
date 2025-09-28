@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+MKD test
+CWD test
+PWD
+MDTM 20210101123000 test
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+SITE HELP
+QUIT

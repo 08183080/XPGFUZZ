@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+RNFR /home/ubuntu/old_filename.txt
+MFF modify;UNIX.mode=0644; /home/ubuntu/old_filename.txt
+HELP
+STAT
+STRU
+QUIT

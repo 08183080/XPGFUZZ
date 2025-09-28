@@ -1,0 +1,11 @@
+EHLO localhost
+HELO localhost
+MAIL FROM:<ub+untu@u+++buntu>
+NOOP
+RCPT TO:<u buntu@ubu ntu>
+DATA
+BDAT 10 LAST
+.
+BDAT 5 LAST
+NOOP
+QUIT

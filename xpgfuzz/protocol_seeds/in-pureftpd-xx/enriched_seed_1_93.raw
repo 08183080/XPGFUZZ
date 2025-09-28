@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+SITE HELP
+FEAT
+SIZE testfile.txt
+NOOP
+HELP
+STAT
+STRU
+QUIT

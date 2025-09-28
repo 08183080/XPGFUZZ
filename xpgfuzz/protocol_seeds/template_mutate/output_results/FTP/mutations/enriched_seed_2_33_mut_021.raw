@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+MKD test
+CWD test
+PWD
+APPE newfile.txt
+MDTM 20221010123000 newfile.txt
+XMKD test2
+XCWD t
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

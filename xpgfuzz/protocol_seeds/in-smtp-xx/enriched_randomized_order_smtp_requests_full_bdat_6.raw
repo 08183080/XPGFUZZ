@@ -1,0 +1,22 @@
+EHLO localhost
+STARTTLS
+MAIL FROM:<longemailaddress1234567890@example.com>
+RCPT TO:<" unusual@characters.com">
+DATA
+Subject: Test Email
+From: <ubuntu@ubuntu>
+To: <ubuntu@ubuntu>
+
+This is a test email with random order and special characters.
+.
+ETRN domain.example.com
+MAIL FROM:<   spaces@around.com  >
+RCPT TO:<repeated@command.com>
+RCPT TO:<repeated@command.com>
+BDAT 10
+TestData1
+.
+BDAT 5
+MoreData
+.
+QUIT

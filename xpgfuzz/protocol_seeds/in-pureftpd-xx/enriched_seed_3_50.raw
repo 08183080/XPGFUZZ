@@ -1,0 +1,17 @@
+USER fuzzing
+PASS fuzzing
+STAT
+CDUP
+XCWD /test_directory
+PORT 127,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+LIST
+XCWD /
+MLST /
+STAT
+XCWD /another_directory
+LIST
+NLST
+CDUP
+MLSD /
+QUIT

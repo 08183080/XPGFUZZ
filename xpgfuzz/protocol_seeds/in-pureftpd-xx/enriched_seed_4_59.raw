@@ -1,0 +1,12 @@
+USER fuzzing
+PASS fuzzing
+FEAT
+SYST
+PORT 192,168,1,2,7,138
+MKD todeletenow
+XMKD todeletetoo
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

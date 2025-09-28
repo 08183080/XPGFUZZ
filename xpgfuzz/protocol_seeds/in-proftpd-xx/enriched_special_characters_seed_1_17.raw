@@ -1,0 +1,21 @@
+USER ubuntu
+PASS ubuntu
+SYST
+LANG en-US
+XCWD /path/with spaces/åñð/🚀🌟
+REST 100
+ACCT
+REIN
+SMNT /long/path/that/exceeds/normal/length/and/keeps/going/on/and/on/to/test/boundary/conditions/repeatedly/to/ensure/stability/in/all/cases/over/and/over/again
+FEAT
+XCWD ..
+LANG zh-CN
+REST 0
+NOOP
+HELP
+STAT
+STRU F
+XCWD /repeated/command/test
+LANG ru-RU
+REST 50
+QUIT

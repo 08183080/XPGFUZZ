@@ -1,0 +1,12 @@
+USER ubuntu
+PASS ubuntu
+SYST
+SITE CHMOD 755 /home/ubuntu
+MKD todeletenow
+XMKD todeletetoo
+STRU F
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

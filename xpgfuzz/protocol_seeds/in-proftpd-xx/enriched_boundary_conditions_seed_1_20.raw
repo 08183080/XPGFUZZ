@@ -1,0 +1,18 @@
+USER ubuntu
+PASS ubuntu
+PWD
+RNFR /path/with specialÜchars@&^!.txt
+DELE /very/long/pathname/that/exceeds/normal/limits/and/continues/setting/a/record/for/length/which/is/unusually/long/to/test/boundary/conditions/and/see/how/the/system/handles/very/long/inputs/like/this/one/possibly/with/some/more/characters/and/some/more.txt
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+QUIT
+PWD
+RNFR /path/to/rename/file.txt
+DELE /path/to/delete/file.txt

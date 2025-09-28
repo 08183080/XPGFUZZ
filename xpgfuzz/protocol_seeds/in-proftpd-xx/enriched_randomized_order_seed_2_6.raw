@@ -1,0 +1,15 @@
+USER ubuntu
+PASS ubuntu
+MIC @test#secure$
+MKD test
+CWD test
+CCC
+PWD
+XMKD test_long_directory_name_with_special_characters_!@#$%^&*()_+
+XCWD test
+XPWD
+CDUP
+DELE test/extra_space /
+XCUP
+PWD
+QUIT

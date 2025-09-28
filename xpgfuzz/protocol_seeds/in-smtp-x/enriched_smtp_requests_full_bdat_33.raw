@@ -1,0 +1,10 @@
+EHLO localhost
+NOOP
+ETRN example.com
+MAIL FROM:<test@example.com>
+RCPT TO:<recipient@example.com>
+NOOP
+BDAT 10 LAST
+BDAT 5 LAST
+NOOP
+QUIT

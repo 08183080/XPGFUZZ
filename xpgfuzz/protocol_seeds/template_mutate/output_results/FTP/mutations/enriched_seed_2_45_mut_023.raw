@@ -1,0 +1,15 @@
+USER fuzzing
+PASS fuzzing
+STRU F
+XDBG 1
+MKD test
+CWD test
+PWD
+XMKD test
+XCWD %s%s%s%n%n
+XPWD
+STRU P
+CDUP
+XCUP
+PWD
+QUIT

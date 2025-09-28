@@ -1,0 +1,11 @@
+EHLO localhost
+HELO 123.456.789.000
+MAIL FROM:<ubuntu@ubuntu>
+RCPT TO:<ubuntu@ubuntu>
+ETRN @long-domain-name-exampleeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.com
+BDAT 10
+.
+BDAT 5
+ETRN <whitespace>    <whitespace>
+ETRN ☃snowman@domain.com
+QUIT

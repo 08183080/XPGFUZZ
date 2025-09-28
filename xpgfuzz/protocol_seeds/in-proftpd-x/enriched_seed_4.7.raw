@@ -1,0 +1,12 @@
+USER ubuntu
+PASS ubuntu
+SYST
+OPTS UTF8 ON
+PBSZ 0
+MKD todeletenow
+XMKD todeletetoo
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

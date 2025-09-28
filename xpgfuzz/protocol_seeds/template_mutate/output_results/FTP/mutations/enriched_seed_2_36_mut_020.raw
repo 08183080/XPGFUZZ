@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+PBSZ 0
+MKD test
+CWD testtest
+PWD
+SITE CHMOD 755 test
+XMKD test2
+XCWD test2
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

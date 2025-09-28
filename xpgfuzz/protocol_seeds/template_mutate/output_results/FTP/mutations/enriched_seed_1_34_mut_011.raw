@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+XCWD %s%s%s%n%n
+SIZE /home/fuzzing/testfile.txt
+HELP
+STAT
+STRU
+QUIT

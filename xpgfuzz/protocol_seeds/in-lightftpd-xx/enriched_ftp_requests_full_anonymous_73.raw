@@ -1,0 +1,9 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+PASV
+PORT 127,0,0,1,152,193
+SITE CHMOD 755 /home/user
+LIST
+QUIT

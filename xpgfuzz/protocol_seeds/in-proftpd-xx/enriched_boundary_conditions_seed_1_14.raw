@@ -1,0 +1,18 @@
+USER ubuntu
+PASS ubuntu
+MODE S ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+LANG en-US
+PROT P
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+MODE Z
+LANG fr-FR
+PROT C
+QUIT

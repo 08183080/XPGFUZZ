@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+MKD test
+CWD test
+PWD
+XMKD test_sub
+XCWD test_sub
+XPWD
+MLSD
+CDUP
+XCUP
+CSID UTF-8
+PWD
+QUIT

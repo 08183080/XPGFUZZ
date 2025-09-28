@@ -1,0 +1,12 @@
+USER fuzzing
+PASS fuzzing
+SYST
+HELP
+MKD todeletenow
+XMKD todeletetoo
+LIST
+APPE uploadfile.txt
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

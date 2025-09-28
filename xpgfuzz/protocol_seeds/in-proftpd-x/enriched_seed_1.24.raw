@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+ALLO 1024
+HELP
+STAT
+STRU
+XMKD /new_directory
+QUIT

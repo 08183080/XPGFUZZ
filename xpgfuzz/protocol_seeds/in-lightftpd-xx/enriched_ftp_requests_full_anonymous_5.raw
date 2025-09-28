@@ -1,0 +1,9 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+RNFR oldfile.txt
+SIZE oldfile.txt
+PORT 127,0,0,1,152,193
+LIST
+QUIT

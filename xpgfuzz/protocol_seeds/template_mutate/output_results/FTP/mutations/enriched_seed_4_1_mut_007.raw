@@ -1,0 +1,13 @@
+USER gnizzuf
+PASS fuzzing
+SYST
+PWD
+MKD todeletenow
+XMKD todeletetoo
+SITE CHMOD 755 todeletenow
+LIST
+PWD
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

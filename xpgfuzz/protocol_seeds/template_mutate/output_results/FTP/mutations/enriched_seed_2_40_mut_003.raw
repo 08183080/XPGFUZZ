@@ -1,0 +1,16 @@
+USER fuzzing
+PASS fuzzing
+MKD test
+CWD null
+PWD
+MDTM test
+SIZE test
+XMKD test
+XCWD test
+XPWD
+MDTM test2
+SIZE test2
+CDUP
+XCUP
+PWD
+QUIT

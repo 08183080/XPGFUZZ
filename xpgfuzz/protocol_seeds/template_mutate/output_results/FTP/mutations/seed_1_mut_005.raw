@@ -1,0 +1,12 @@
+USER ubuntu
+PASS undefined
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+QUIT

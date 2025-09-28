@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+MLSD /home/fuzzing
+SITE UTIME 20210707120000 /home/fuzzing/file.txt
+NOOP
+HELP
+STAT
+STRU
+QUIT

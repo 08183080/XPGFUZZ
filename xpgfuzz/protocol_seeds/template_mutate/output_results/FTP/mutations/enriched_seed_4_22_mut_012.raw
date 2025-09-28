@@ -1,0 +1,12 @@
+USER fuzzing
+PASS ../../../../../../../../../../
+SYST
+MKD todeletenow
+XMKD todeletetoo
+LIST
+SITE IDLE 300
+RMD todeletenow
+XRMD todeletetoo
+LIST
+ESTP
+QUIT

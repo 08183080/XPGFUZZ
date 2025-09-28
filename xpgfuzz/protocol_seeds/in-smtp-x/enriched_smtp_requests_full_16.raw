@@ -1,0 +1,9 @@
+EHLO localhost
+VRFY user
+ETRN domain.com
+MAIL FROM:<ubuntu@ubuntu>
+RCPT TO:<ubuntu@ubuntu>
+DATA
+abc
+.
+QUIT

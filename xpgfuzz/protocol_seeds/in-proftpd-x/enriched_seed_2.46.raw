@@ -1,0 +1,15 @@
+USER ubuntu
+PASS ubuntu
+PORT 192,168,1,1,200,100
+MKD test
+CWD test
+PWD
+MIC
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+PORT 192,168,1,1,202,101
+QUIT

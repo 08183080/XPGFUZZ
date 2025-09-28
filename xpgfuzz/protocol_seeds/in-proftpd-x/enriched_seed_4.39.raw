@@ -1,0 +1,12 @@
+USER ubuntu
+PASS ubuntu
+SYST
+CONF allow_overwrite on
+MKD todeletenow
+XMKD todeletetoo
+EPSV
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

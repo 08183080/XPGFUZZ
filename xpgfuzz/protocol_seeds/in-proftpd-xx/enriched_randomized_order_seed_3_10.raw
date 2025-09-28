@@ -1,0 +1,21 @@
+USER ubuntu
+PASS ubuntu
+SIZE /very/long/path/with/special/characters/%%%%%%&&&&&&@@@@@@
+DELE /sample/file.txt
+MFMT 202009151230 /another/sample.txt
+STAT
+PORT 127,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+LIST
+MLST /
+SIZE /    /with/whitespace/
+DELE /repeated/repeated/repeated/file.txt
+MFMT 202301011200 /newyear/file.txt
+STAT
+LIST
+NLST
+MLSD /
+SIZE /normal/file.txt
+DELE /delete/me.txt
+MFMT 199912312359 /old/file.txt
+QUIT

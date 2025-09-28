@@ -1,0 +1,13 @@
+EHLO localhost
+STARTTLS
+EHLO localhost
+MAIL FROM:<ubuntu@ubuntu>
+RCPT TO:<ubuntu@ubuntu>
+DSN RET=FULL ENVID=12345
+BDAT 10
+RSET
+MAIL FROM:<test@example.com>
+RCPT TO:<test@example.com>
+BDAT 5 LAST
+.
+QUIT

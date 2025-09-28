@@ -1,0 +1,14 @@
+USER fuzzing
+PASS f
+MKD test
+CWD test
+PWD
+XMKD test
+XCWD test
+XPWD
+SITE HELP
+CDUP
+XCUP
+PWD
+STOR example.txt
+QUIT

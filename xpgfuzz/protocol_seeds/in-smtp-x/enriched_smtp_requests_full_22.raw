@@ -1,0 +1,8 @@
+HELO localhost
+EHLO localhost
+MAIL FROM:<ubuntu@ubuntu> SIZE=1024
+RCPT TO:<ubuntu@ubuntu>
+DATA
+abc
+.
+QUIT

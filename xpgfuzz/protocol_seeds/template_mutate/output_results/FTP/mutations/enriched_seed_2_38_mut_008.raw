@@ -1,0 +1,14 @@
+USER fuzzing
+PASS <script>alert(1)</script>
+MKD test
+CWD test
+PWD
+STOU uniquefile.txt
+XRMD test
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

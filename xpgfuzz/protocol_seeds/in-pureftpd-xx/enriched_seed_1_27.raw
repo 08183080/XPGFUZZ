@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+APPE newfile.txt
+NOOP
+MLSD
+HELP
+STAT
+STRU
+QUIT

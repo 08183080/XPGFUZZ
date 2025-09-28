@@ -1,0 +1,18 @@
+USER fuzzing
+PASS fuzzing
+STAT
+CWD /test
+CDUP
+PORT 127,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+LIST
+CWD /home
+CDUP
+MLST /
+STAT
+LIST
+NLST
+CWD /files
+MLSD /
+CDUP
+QUIT

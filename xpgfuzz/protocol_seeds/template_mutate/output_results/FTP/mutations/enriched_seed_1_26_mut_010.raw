@@ -1,0 +1,14 @@
+USER fuzzing
+PASS undefined
+SYST
+ACCT
+REIN
+SMNT
+OPTS MLST type;size;modify;perm;
+FEAT
+NOOP
+HELP
+STAT
+STRU
+XMKD test_directory
+QUIT

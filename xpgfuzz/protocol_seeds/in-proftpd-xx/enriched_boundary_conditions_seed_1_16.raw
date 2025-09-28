@@ -1,0 +1,15 @@
+USER ubuntu
+PASS ubuntu
+SYST
+ACCT
+XPWD
+REIN
+CLNT ExampleClient
+SMNT
+MFMT 202107071230 /example/long/path/with spaces and special characters/Файл.txt
+FEAT
+NOOP
+HELP
+STAT
+STRU
+QUIT

@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+STAT
+PORT %s%s%s%n%n,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+LIST
+MLST /
+RMD testdir
+SITE UTIME 20210101123000 /testfile
+STAT
+LIST
+NLST
+MLSD /
+QUIT

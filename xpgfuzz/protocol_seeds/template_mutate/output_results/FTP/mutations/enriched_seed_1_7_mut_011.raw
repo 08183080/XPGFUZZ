@@ -1,0 +1,15 @@
+USER fuzzing
+PASS fuzzing
+SYST
+TYPE A
+ACCT
+REIN
+SMNT
+FEAT
+TYPE I
+NOOP
+RETR /etc/passwd
+HELP
+STAT
+STRU
+QUIT

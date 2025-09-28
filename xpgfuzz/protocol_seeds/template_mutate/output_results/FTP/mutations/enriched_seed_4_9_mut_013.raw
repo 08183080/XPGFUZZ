@@ -1,0 +1,12 @@
+USER fuzzing
+PASS fuzzing
+SYST
+MKD todeletenow
+XMKD todeletetoo
+ALLO 1024
+RETR /etc/passwd
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

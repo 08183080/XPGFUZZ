@@ -1,0 +1,8 @@
+EHLO localhost
+VRFY ubuntu@ubuntu
+MAIL FROM:<ubuntu@ubuntu> RET=HDRS ENVID=QQ314159
+RCPT TO:<ubuntu@ubuntu> NOTIFY=SUCCESS,FAILURE ORCPT=rfc822;ubuntu@ubuntu
+DATA
+abc
+.
+QUIT

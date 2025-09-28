@@ -1,0 +1,14 @@
+EHLO localhost
+STARTTLS
+EHLO localhost
+MAIL FROM:<ubuntu@ubuntu>
+RCPT TO:<ubuntu@ubuntu>
+VRFY <ubüntú+special@übuntu.com>
+DATA
+Subject: Test Email
+Hello, this is a test email with special characters and boundary conditions.
+.
+BDAT 10
+.
+BDAT 5 LAST
+QUIT

@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+PORT 192,168,1,1,200,20
+EPRT |1|192.168.1.1|2020|
+MKD test
+CWD test
+PWD
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

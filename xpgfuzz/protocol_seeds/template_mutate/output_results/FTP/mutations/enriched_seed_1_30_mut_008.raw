@@ -1,0 +1,14 @@
+USER ../../../../../../../../../../
+PASS fuzzing
+SYST
+ACCT
+REIN
+EPRT |1|192.168.1.1|21|
+TYPE I
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+QUIT

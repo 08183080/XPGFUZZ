@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+SYST
+CCC
+ACCT
+APPE /home/fuzzing/test.txt
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+QUIT

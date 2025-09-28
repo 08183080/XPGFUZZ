@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+ALLO 1024
+PORT 192,168,1,1,200,100
+MKD test
+CWD test
+PWD
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

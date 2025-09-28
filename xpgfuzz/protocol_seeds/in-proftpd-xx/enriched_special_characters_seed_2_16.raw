@@ -1,0 +1,19 @@
+USER ubuntu
+PASS ubuntu
+CLNT ProFTPD-fuzz-🚀
+ENC UTF-8
+ABOR
+MKD test@longdirectorynamewithspecialcharacters_©_🌟_______________________________
+CWD test
+PWD
+XMKD test@longdirectorynamewithspecialcharacters_©_🌟_______________________________
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+CLNT ProFTPD-extra
+ENC ASCII
+ABOR
+ABOR
+QUIT

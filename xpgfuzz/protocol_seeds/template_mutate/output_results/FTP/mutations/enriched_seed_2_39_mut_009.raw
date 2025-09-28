@@ -1,0 +1,14 @@
+USER fuzzing
+PASS ' OR 1=1 --
+AUTH TLS
+MKD test
+CWD test
+PWD
+RETR file.txt
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

@@ -1,0 +1,12 @@
+AUTH TLS
+USER ubuntu
+PASS ubuntu
+SYST
+MKD todeletenow
+XMKD todeletetoo
+LIST
+CDUP
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

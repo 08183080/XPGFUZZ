@@ -1,0 +1,24 @@
+USER ubuntu
+PASS ubuntu
+CLNT test client
+PBSZ 0
+HELP
+STAT
+PORT 127,0,0,1,255,255
+EPRT |2|::1|2024|
+LIST
+MLST /home/ubuntu
+HELP SITE
+PBSZ 8192
+CLNT test client with spaces
+PORT 127,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+LIST
+HELP ALLO
+STAT
+LIST
+NLST
+CLNT unusual🚀client#123
+PBSZ 1024000
+MLSD /
+QUIT

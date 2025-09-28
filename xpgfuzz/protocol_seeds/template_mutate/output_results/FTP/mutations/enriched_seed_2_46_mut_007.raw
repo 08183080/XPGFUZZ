@@ -1,0 +1,14 @@
+USER ' OR 1=1 --
+PASS fuzzing
+SYST
+MKD test
+CWD test
+PWD
+SIZE testfile.txt
+XMKD test2
+XCWD test2
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

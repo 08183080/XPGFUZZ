@@ -1,0 +1,144 @@
+[
+  {
+    "name": "USER",
+    "template": [
+      "USER <<username:string>>\r\n"
+    ],
+    "regex": "USER\\ (.*?)\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "username",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "name": "PASS",
+    "template": [
+      "PASS <<password:string>>\r\n"
+    ],
+    "regex": "PASS\\ (.*?)\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "password",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "name": "CWD",
+    "template": [
+      "CWD <<directory:string>>\r\n"
+    ],
+    "regex": "CWD\\ (.*?)\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "directory",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "name": "LIST",
+    "template": [
+      "LIST\r\n"
+    ],
+    "regex": "LIST\\\r\\\n",
+    "placeholders": []
+  },
+  {
+    "name": "RETR",
+    "template": [
+      "RETR <<filename:path>>\r\n"
+    ],
+    "regex": "RETR\\ (.*?)\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "filename",
+        "type": "path"
+      }
+    ]
+  },
+  {
+    "name": "STOR",
+    "template": [
+      "STOR <<filename:path>>\r\n"
+    ],
+    "regex": "STOR\\ (.*?)\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "filename",
+        "type": "path"
+      }
+    ]
+  },
+  {
+    "name": "PORT",
+    "template": [
+      "PORT <<ip_address:string>>,<<port:number>>\r\n"
+    ],
+    "regex": "PORT\\ (.*?),(.*?)\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "ip_address",
+        "type": "string"
+      },
+      {
+        "name": "port",
+        "type": "number"
+      }
+    ]
+  },
+  {
+    "name": "PASV",
+    "template": [
+      "PASV\r\n"
+    ],
+    "regex": "PASV\\\r\\\n",
+    "placeholders": []
+  },
+  {
+    "name": "QUIT",
+    "template": [
+      "QUIT\r\n"
+    ],
+    "regex": "QUIT\\\r\\\n",
+    "placeholders": []
+  },
+  {
+    "name": "FTP",
+    "template": [
+      "USER <<username:string>>\r\n",
+      "PASS <<password:string>>\r\n",
+      "CWD <<directory:string>>\r\n",
+      "LIST\r\n",
+      "PASV\r\n",
+      "RETR <<filename:path>>\r\n",
+      "STOR <<filename:path>>\r\n",
+      "QUIT\r\n"
+    ],
+    "regex": "USER\\ (.*?)\\\r\\\nPASS\\ (.*?)\\\r\\\nCWD\\ (.*?)\\\r\\\nLIST\\\r\\\nPASV\\\r\\\nRETR\\ (.*?)\\\r\\\nSTOR\\ (.*?)\\\r\\\nQUIT\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "username",
+        "type": "string"
+      },
+      {
+        "name": "password",
+        "type": "string"
+      },
+      {
+        "name": "directory",
+        "type": "string"
+      },
+      {
+        "name": "filename",
+        "type": "path"
+      },
+      {
+        "name": "filename",
+        "type": "path"
+      }
+    ]
+  }
+]

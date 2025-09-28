@@ -1,0 +1,10 @@
+USER anonymous
+PASS ubuntu
+SYST
+NOOP
+PWD
+SIZE /home/ubuntu
+PORT 127,0,0,1,152,193
+NOOP
+LIST
+QUIT

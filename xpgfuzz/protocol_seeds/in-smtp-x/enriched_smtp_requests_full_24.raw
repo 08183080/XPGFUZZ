@@ -1,0 +1,14 @@
+EHLO localhost
+STARTTLS
+EHLO localhost
+MAIL FROM:<ubuntu@ubuntu>
+RCPT TO:<ubuntu@ubuntu>
+VRFY ubuntu@ubuntu
+DATA
+Subject: Test Email
+From: ubuntu@ubuntu
+To: ubuntu@ubuntu
+
+This is a test email.
+.
+QUIT

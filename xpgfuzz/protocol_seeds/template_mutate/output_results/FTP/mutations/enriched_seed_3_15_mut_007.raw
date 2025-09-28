@@ -1,0 +1,14 @@
+USER ../../../../../../../../../../
+PASS fuzzing
+STAT
+ESTA
+PORT 127,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+PROT P
+LIST
+MLST /
+STAT
+LIST
+NLST
+MLSD /
+QUIT

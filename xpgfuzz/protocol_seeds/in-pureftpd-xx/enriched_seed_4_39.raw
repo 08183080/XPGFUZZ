@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+NOOP
+SYST
+MKD todeletenow
+XMKD todeletetoo
+STOU uniquefile
+LIST
+NOOP
+RMD todeletenow
+XRMD todeletetoo
+LIST
+NOOP
+QUIT

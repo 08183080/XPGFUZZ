@@ -1,0 +1,18 @@
+USER ubuntu
+PASS ubuntu
+SYST
+SIZE /very/long/and/complex/pathname/that/might/just/be/over/the/limit/of/what/is/expected/for/a/single/directory/or/file/name/in/a/unix-like/system
+MODE S
+RETR /file with whitespace.txt
+MKD todeletenow
+XMKD todeletetoo
+RETR strangecharfile_ß∂ƒ©.txt
+LIST
+MODE B
+RMD todeletenow
+XRMD todeletetoo
+RETR repeatedcommand.txt
+RETR repeatedcommand.txt
+LIST
+SIZE nonexistingfile.txt
+QUIT

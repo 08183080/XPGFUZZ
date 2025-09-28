@@ -1,0 +1,20 @@
+USER ubuntu
+PASS ubuntu
+NOOP
+STAT
+RMD verylongdirectorynamethatisunlikelytobeinactualuse123456789012345678901234567890
+XMKD test_directory
+PORT 127,0,0,1,14,178
+EPRT |2|0:0:0:0:0:0:0:0|1025|
+LIST
+NOOP
+MLST /
+STAT
+RMD test_directory
+XMKD another_directory
+LIST
+NLST
+MLSD /
+NOOP
+RMD another_directory
+QUIT

@@ -1,0 +1,14 @@
+EHLO localhost
+RSET
+MAIL FROM:<ubuntu@ubuntu> SIZE=1024
+RCPT TO:<ubuntu@ubuntu>
+DATA
+abc
+.
+RSET
+MAIL FROM:<test@example.com> SIZE=2048
+RCPT TO:<test@example.com>
+DATA
+xyz
+.
+QUIT

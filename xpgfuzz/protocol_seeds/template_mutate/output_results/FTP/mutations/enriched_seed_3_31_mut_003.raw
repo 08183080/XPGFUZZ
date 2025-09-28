@@ -1,0 +1,14 @@
+USER <script>alert(1)</script>
+PASS fuzzing
+STAT
+PORT 127,0,0,1,14,178
+EPRT |2|0:0:0:0:0:0:0:0|1025|
+ALLO 1024
+APPE testfile.txt
+LIST
+MLST /
+STAT
+LIST
+NLST
+MLSD /
+QUIT

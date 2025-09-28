@@ -1,0 +1,13 @@
+EHLO localhost
+VRFY user@example.com
+MAIL FROM:<ubuntu@ubuntu>
+RCPT TO:<ubuntu@ubuntu>
+RSET
+MAIL FROM:<test@example.com>
+RCPT TO:<test@example.com>
+BDAT 10
+.
+BDAT 5 LAST
+RSET
+VRFY anotheruser@example.com
+QUIT

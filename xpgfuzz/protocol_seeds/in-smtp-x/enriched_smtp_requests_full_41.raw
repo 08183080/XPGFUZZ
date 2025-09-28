@@ -1,0 +1,15 @@
+EHLO localhost
+250-PIPELINING
+250-CHUNKING
+MAIL FROM:<ubuntu@ubuntu>
+250 OK
+RCPT TO:<ubuntu@ubuntu>
+250 Accepted
+BDAT 3
+abc
+250 OK
+BDAT 1 LAST
+.
+250 OK: message accepted for delivery
+QUIT
+221 Bye

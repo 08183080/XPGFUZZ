@@ -1,0 +1,9 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+HELP
+PORT 127,0,0,1,152,193
+RNFR oldfile.txt
+LIST
+QUIT

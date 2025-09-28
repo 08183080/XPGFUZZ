@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+MKD test
+CWD %s%s%s%n%n
+PWD
+RNFR oldfile
+SITE UTIME 20211010120000 test
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

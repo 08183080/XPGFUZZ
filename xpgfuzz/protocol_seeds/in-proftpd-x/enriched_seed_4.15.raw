@@ -1,0 +1,12 @@
+USER ubuntu
+PASS ubuntu
+SYST
+PBSZ 0
+XPWD
+MKD todeletenow
+XMKD todeletetoo
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

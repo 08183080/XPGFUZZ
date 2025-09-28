@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+STAT
+PORT 127,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+OPTS MLST type;size;modify;perm;
+LIST
+MLST /
+ESTP
+STAT
+LIST
+NLST
+MLSD /
+QUIT

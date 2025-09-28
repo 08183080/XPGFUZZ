@@ -1,0 +1,16 @@
+USER ubuntu
+PASS ubuntu
+ACCT ädminïstrator
+SYST
+LANG en-US
+APPE file.txt
+MKD todeletenow
+XMKD todeletetoo
+LANG fr-FR
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+APPE longfilenameeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.txt
+LANG zh-CN
+QUIT

@@ -1,0 +1,12 @@
+HELO testserver
+EHLO localhost
+NOOP
+MAIL FROM:<ubuntu@ubuntu>
+NOOP
+RCPT TO:<ubuntu@ubuntu>
+NOOP
+BDAT 10
+.
+BDAT 5
+NOOP
+QUIT

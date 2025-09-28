@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+MKD test
+CWD null
+PWD
+APPE file.txt
+XMKD test2
+XCWD test2
+XPWD
+ESTP
+CDUP
+XCUP
+PWD
+QUIT

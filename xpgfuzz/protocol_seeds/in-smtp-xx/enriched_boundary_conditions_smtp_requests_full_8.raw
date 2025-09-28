@@ -1,0 +1,20 @@
+EHLO localhost
+RSET
+MAIL FROM:<verylongemailaddress1234567890@example.com>
+RCPT TO:<     ubuntu@ubuntu     >
+DSN ENVID=xyz RET=HDRS
+ETRN some.domain.com
+DATA
+Subject: Test email 🚀
+From: "Sender Name" <sender@example.com>
+To: <recipient@example.com>
+This is a test message with special characters: ☃, 𠜎, and emojis 😃.
+.
+RSET
+MAIL FROM:<user@@@example.com>
+RCPT TO:<other@@@example.com>
+DATA
+Test message after reset.
+.
+ETRN another.domain.com
+QUIT

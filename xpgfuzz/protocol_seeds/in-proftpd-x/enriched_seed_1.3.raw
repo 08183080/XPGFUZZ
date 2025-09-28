@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+SYST
+ADAT some_data
+ACCT
+REIN
+SMNT
+FEAT
+SIZE /path/to/file
+NOOP
+HELP
+STAT
+STRU
+QUIT

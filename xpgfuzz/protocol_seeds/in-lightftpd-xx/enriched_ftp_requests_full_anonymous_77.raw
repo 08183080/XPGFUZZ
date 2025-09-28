@@ -1,0 +1,9 @@
+USER anonymous
+PASS ubuntu
+SYST
+PBSZ 0
+PWD
+PORT 127,0,0,1,152,193
+APPE newfile.txt
+LIST
+QUIT

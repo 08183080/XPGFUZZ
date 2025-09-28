@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+MKD test
+CWD test
+PWD
+EPSV
+STOR C:\Windows\system32\kernel32.dll
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

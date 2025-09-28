@@ -1,0 +1,14 @@
+USER ' OR 1=1 --
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+EPSV
+XMKD test_directory
+HELP
+STAT
+STRU
+QUIT

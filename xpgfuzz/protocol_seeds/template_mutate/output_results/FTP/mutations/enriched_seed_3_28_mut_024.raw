@@ -1,0 +1,18 @@
+USER fuzzing
+PASS fuzzing
+CWD /home/fuzzing
+PWD
+STAT
+PORT 127,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+LIST
+MLST /
+CWD ../../../../../../../../../../
+PWD
+STAT
+LIST
+NLST
+CWD /
+MLSD /
+PWD
+QUIT

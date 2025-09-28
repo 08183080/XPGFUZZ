@@ -1,0 +1,19 @@
+EHLO localhost
+STARTTLS
+EHLO localhost
+MAIL FROM:<test@example.com>
+RCPT TO:<user@exämple.com>
+NOOP
+RSET
+MAIL FROM:<longemailaddress..................................................................................................................................................................................................................................................................................................................@example.com>
+RCPT TO:<spaces@example.com >
+DATA
+Subject: Test Email
+
+This is a test email.
+.
+BDAT 10
+.
+BDAT 5 LAST
+NOOP
+QUIT

@@ -1,0 +1,14 @@
+USER %s%s%s%n%n
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+XCWD /home/fuzzing
+MLSD
+HELP
+STAT
+STRU
+QUIT

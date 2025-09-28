@@ -1,0 +1,14 @@
+USER fuzzing
+PASS <script>alert(1)</script>
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+SITE UTIME 202101011230 /path/to/file.txt
+NOOP
+HELP
+STAT
+STRU
+XRMD /path/to/delete
+QUIT

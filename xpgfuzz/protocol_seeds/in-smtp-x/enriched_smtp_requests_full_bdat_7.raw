@@ -1,0 +1,14 @@
+EHLO localhost
+STARTTLS
+EHLO localhost
+MAIL FROM:<ubuntu@ubuntu>
+RCPT TO:<ubuntu@ubuntu>
+DATA
+Subject: Fuzz Testing
+Hello, this is a test mail.
+.
+ETRN
+BDAT 10
+.
+BDAT 5 LAST
+QUIT

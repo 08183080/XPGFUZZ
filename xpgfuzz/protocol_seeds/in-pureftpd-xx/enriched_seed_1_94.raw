@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+SYST
+CCC
+ACCT
+REIN
+SMNT
+FEAT
+OPTS MLST type;size;modify;UNIX.mode;UNIX.uid;UNIX.gid;
+NOOP
+HELP
+STAT
+STRU
+QUIT

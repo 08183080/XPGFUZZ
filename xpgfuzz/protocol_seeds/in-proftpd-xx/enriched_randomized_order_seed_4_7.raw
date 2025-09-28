@@ -1,0 +1,15 @@
+USER ubuntu
+PASS ubuntu
+EPRT |1|192.0.2.1|62123|
+STAT /home/ubuntu
+EPRT |2|2001:0db8::1|62123|
+SYST
+MKD todeletenow
+XMKD todeletetoo
+EPRT |1|:::::1|62123|  
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+STAT veryveryverylongdirectorynamecontainingalotofcharactersandnumbers1234567890abcdefghijklmnopqrstuvwxyz
+QUIT

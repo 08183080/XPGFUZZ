@@ -1,0 +1,14 @@
+USER ../../../../../../../../../../
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+SITE HELP
+HELP
+STAT
+SIZE testfile.txt
+STRU
+QUIT

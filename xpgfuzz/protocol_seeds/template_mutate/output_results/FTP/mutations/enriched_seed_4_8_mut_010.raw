@@ -1,0 +1,13 @@
+USER ../../../../../../../../../../
+PASS fuzzing
+SYST
+TYPE A
+MKD todeletenow
+XMKD todeletetoo
+MDTM todeletenow
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+TYPE I
+QUIT

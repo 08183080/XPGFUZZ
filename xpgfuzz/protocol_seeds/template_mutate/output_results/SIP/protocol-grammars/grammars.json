@@ -1,0 +1,446 @@
+[
+  {
+    "name": "INVITE",
+    "template": [
+      "INVITE sip:<<destination:string>> SIP/2.0\r\n",
+      "Via: SIP/2.0/UDP <<source_ip:string>>:<<source_port:integer>>\r\n",
+      "From: <<caller:string>>\r\n",
+      "To: <<callee:string>>\r\n",
+      "Call-ID: <<call_id:string>>\r\n",
+      "CSeq: <<cseq:integer>> INVITE\r\n",
+      "Max-Forwards: 70\r\n",
+      "Content-Length: 0\r\n",
+      "\r\n"
+    ],
+    "regex": "INVITE\\ sip:(.*?)\\ SIP/2\\.0\\\r\\\nVia:\\ SIP/2\\.0/UDP\\ (.*?):(.*?)\\\r\\\nFrom:\\ (.*?)\\\r\\\nTo:\\ (.*?)\\\r\\\nCall\\-ID:\\ (.*?)\\\r\\\nCSeq:\\ (.*?)\\ INVITE\\\r\\\nMax\\-Forwards:\\ 70\\\r\\\nContent\\-Length:\\ 0\\\r\\\n\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "destination",
+        "type": "string"
+      },
+      {
+        "name": "source_ip",
+        "type": "string"
+      },
+      {
+        "name": "source_port",
+        "type": "integer"
+      },
+      {
+        "name": "caller",
+        "type": "string"
+      },
+      {
+        "name": "callee",
+        "type": "string"
+      },
+      {
+        "name": "call_id",
+        "type": "string"
+      },
+      {
+        "name": "cseq",
+        "type": "integer"
+      }
+    ]
+  },
+  {
+    "name": "REGISTER",
+    "template": [
+      "REGISTER <<request_uri:string>> SIP/2.0\r\n",
+      "Via: SIP/2.0/UDP <<via_ip:string>>:<<via_port:integer>>\r\n",
+      "From: <<from_address:string>>\r\n",
+      "To: <<to_address:string>>\r\n",
+      "Call-ID: <<call_id:string>>\r\n",
+      "CSeq: <<cseq:integer>> REGISTER\r\n",
+      "Max-Forwards: 100\r\n",
+      "User-Agent: <<user_agent:string>>\r\n",
+      "Content-Length: <<content_length:integer>>\r\n",
+      "\r\n"
+    ],
+    "regex": "REGISTER\\ (.*?)\\ SIP/2\\.0\\\r\\\nVia:\\ SIP/2\\.0/UDP\\ (.*?):(.*?)\\\r\\\nFrom:\\ (.*?)\\\r\\\nTo:\\ (.*?)\\\r\\\nCall\\-ID:\\ (.*?)\\\r\\\nCSeq:\\ (.*?)\\ REGISTER\\\r\\\nMax\\-Forwards:\\ 70\\\r\\\nUser\\-Agent:\\ (.*?)\\\r\\\nContent\\-Length:\\ (.*?)\\\r\\\n\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "request_uri",
+        "type": "string"
+      },
+      {
+        "name": "via_ip",
+        "type": "string"
+      },
+      {
+        "name": "via_port",
+        "type": "integer"
+      },
+      {
+        "name": "from_address",
+        "type": "string"
+      },
+      {
+        "name": "to_address",
+        "type": "string"
+      },
+      {
+        "name": "call_id",
+        "type": "string"
+      },
+      {
+        "name": "cseq",
+        "type": "integer"
+      },
+      {
+        "name": "user_agent",
+        "type": "string"
+      },
+      {
+        "name": "content_length",
+        "type": "integer"
+      }
+    ]
+  },
+  {
+    "name": "OPTIONS",
+    "template": [
+      "OPTIONS <<request_uri:string>> SIP/2.0\r\n",
+      "Via: SIP/2.0/UDP <<via_ip:string>>:<<via_port:integer>>\r\n",
+      "From: <<from_address:string>>\r\n",
+      "To: <<to_address:string>>\r\n",
+      "Call-ID: <<call_id:string>>\r\n",
+      "CSeq: <<cseq:integer>> OPTIONS\r\n",
+      "Max-Forwards: 70\r\n",
+      "User-Agent: <<user_agent:string>>\r\n",
+      "Content-Length: <<content_length:integer>>\r\n",
+      "Content-Type: application/sdp\r\n",
+      "\r\n"
+    ],
+    "regex": "OPTIONS\\ (.*?)\\ SIP/2\\.0\\\r\\\nVia:\\ SIP/2\\.0/UDP\\ (.*?):(.*?)\\\r\\\nFrom:\\ (.*?)\\\r\\\nTo:\\ (.*?)\\\r\\\nCall\\-ID:\\ (.*?)\\\r\\\nCSeq:\\ (.*?)\\ OPTIONS\\\r\\\nMax\\-Forwards:\\ 70\\\r\\\nUser\\-Agent:\\ (.*?)\\\r\\\nContent\\-Length:\\ (.*?)\\\r\\\nContent\\-Type:\\ application/sdp\\\r\\\n\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "request_uri",
+        "type": "string"
+      },
+      {
+        "name": "via_ip",
+        "type": "string"
+      },
+      {
+        "name": "via_port",
+        "type": "integer"
+      },
+      {
+        "name": "from_address",
+        "type": "string"
+      },
+      {
+        "name": "to_address",
+        "type": "string"
+      },
+      {
+        "name": "call_id",
+        "type": "string"
+      },
+      {
+        "name": "cseq",
+        "type": "integer"
+      },
+      {
+        "name": "user_agent",
+        "type": "string"
+      },
+      {
+        "name": "content_length",
+        "type": "integer"
+      }
+    ]
+  },
+  {
+    "name": "BYE",
+    "template": [
+      "BYE <<request_uri:string>> SIP/2.0\r\n",
+      "Via: SIP/2.0/UDP <<via_ip:string>>:<<via_port:integer>>\r\n",
+      "From: <<from_address:string>>\r\n",
+      "To: <<to_address:string>>\r\n",
+      "Call-ID: <<call_id:string>>\r\n",
+      "CSeq: <<cseq:integer>> BYE\r\n",
+      "Max-Forwards: 70\r\n",
+      "User-Agent: <<user_agent:string>>\r\n",
+      "Content-Length: <<content_length:integer>>\r\n",
+      "Content-Type: application/sdp\r\n",
+      "\r\n"
+    ],
+    "regex": "BYE\\ (.*?)\\ SIP/2\\.0\\\r\\\nVia:\\ SIP/2\\.0/UDP\\ (.*?):(.*?)\\\r\\\nFrom:\\ (.*?)\\\r\\\nTo:\\ (.*?)\\\r\\\nCall\\-ID:\\ (.*?)\\\r\\\nCSeq:\\ (.*?)\\ BYE\\\r\\\nMax\\-Forwards:\\ 70\\\r\\\nUser\\-Agent:\\ (.*?)\\\r\\\nContent\\-Length:\\ (.*?)\\\r\\\nContent\\-Type:\\ application/sdp\\\r\\\n\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "request_uri",
+        "type": "string"
+      },
+      {
+        "name": "via_ip",
+        "type": "string"
+      },
+      {
+        "name": "via_port",
+        "type": "integer"
+      },
+      {
+        "name": "from_address",
+        "type": "string"
+      },
+      {
+        "name": "to_address",
+        "type": "string"
+      },
+      {
+        "name": "call_id",
+        "type": "string"
+      },
+      {
+        "name": "cseq",
+        "type": "integer"
+      },
+      {
+        "name": "user_agent",
+        "type": "string"
+      },
+      {
+        "name": "content_length",
+        "type": "integer"
+      }
+    ]
+  },
+  {
+    "name": "ACK",
+    "template": [
+      "ACK sip:<<destination:string>> SIP/2.0\r\n",
+      "Via: SIP/2.0/UDP <<source_ip:string>>:<<source_port:integer>>\r\n",
+      "From: <<caller:string>>\r\n",
+      "To: <<callee:string>>\r\n",
+      "Call-ID: <<call_id:string>>\r\n",
+      "CSeq: <<cseq:integer>> ACK\r\n",
+      "Max-Forwards: 70\r\n",
+      "Content-Length: 0\r\n",
+      "\r\n"
+    ],
+    "regex": "ACK\\ sip:(.*?)\\ SIP/2\\.0\\\r\\\nVia:\\ SIP/2\\.0/UDP\\ (.*?):(.*?)\\\r\\\nFrom:\\ (.*?)\\\r\\\nTo:\\ (.*?)\\\r\\\nCall\\-ID:\\ (.*?)\\\r\\\nCSeq:\\ (.*?)\\ ACK\\\r\\\nMax\\-Forwards:\\ 70\\\r\\\nContent\\-Length:\\ 0\\\r\\\n\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "destination",
+        "type": "string"
+      },
+      {
+        "name": "source_ip",
+        "type": "string"
+      },
+      {
+        "name": "source_port",
+        "type": "integer"
+      },
+      {
+        "name": "caller",
+        "type": "string"
+      },
+      {
+        "name": "callee",
+        "type": "string"
+      },
+      {
+        "name": "call_id",
+        "type": "string"
+      },
+      {
+        "name": "cseq",
+        "type": "integer"
+      }
+    ]
+  },
+  {
+    "name": "INFO",
+    "template": [
+      "INFO sip:<<destination:string>> SIP/2.0\r\n",
+      "Via: SIP/2.0/UDP <<source_ip:string>>:<<source_port:integer>>\r\n",
+      "From: <<caller:string>>\r\n",
+      "To: <<callee:string>>\r\n",
+      "Call-ID: <<call_id:string>>\r\n",
+      "CSeq: <<cseq:integer>> INFO\r\n",
+      "Max-Forwards: 70\r\n",
+      "Content-Length: 0\r\n",
+      "\r\n"
+    ],
+    "regex": "INFO\\ sip:(.*?)\\ SIP/2\\.0\\\r\\\nVia:\\ SIP/2\\.0/UDP\\ (.*?):(.*?)\\\r\\\nFrom:\\ (.*?)\\\r\\\nTo:\\ (.*?)\\\r\\\nCall\\-ID:\\ (.*?)\\\r\\\nCSeq:\\ (.*?)\\ INFO\\\r\\\nMax\\-Forwards:\\ 70\\\r\\\nContent\\-Length:\\ 0\\\r\\\n\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "destination",
+        "type": "string"
+      },
+      {
+        "name": "source_ip",
+        "type": "string"
+      },
+      {
+        "name": "source_port",
+        "type": "integer"
+      },
+      {
+        "name": "caller",
+        "type": "string"
+      },
+      {
+        "name": "callee",
+        "type": "string"
+      },
+      {
+        "name": "call_id",
+        "type": "string"
+      },
+      {
+        "name": "cseq",
+        "type": "integer"
+      }
+    ]
+  },
+  {
+    "name": "MESSAGE",
+    "template": [
+      "MESSAGE sip:<<destination:string>> SIP/2.0\r\n",
+      "Via: SIP/2.0/UDP <<source_ip:string>>:<<source_port:integer>>\r\n",
+      "From: <<caller:string>>\r\n",
+      "To: <<callee:string>>\r\n",
+      "Call-ID: <<call_id:string>>\r\n",
+      "CSeq: <<cseq:integer>> MESSAGE\r\n",
+      "Max-Forwards: 70\r\n",
+      "Content-Length: 0\r\n",
+      "\r\n"
+    ],
+    "regex": "MESSAGE\\ sip:(.*?)\\ SIP/2\\.0\\\r\\\nVia:\\ SIP/2\\.0/UDP\\ (.*?):(.*?)\\\r\\\nFrom:\\ (.*?)\\\r\\\nTo:\\ (.*?)\\\r\\\nCall\\-ID:\\ (.*?)\\\r\\\nCSeq:\\ (.*?)\\ MESSAGE\\\r\\\nMax\\-Forwards:\\ 70\\\r\\\nContent\\-Length:\\ 0\\\r\\\n\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "destination",
+        "type": "string"
+      },
+      {
+        "name": "source_ip",
+        "type": "string"
+      },
+      {
+        "name": "source_port",
+        "type": "integer"
+      },
+      {
+        "name": "caller",
+        "type": "string"
+      },
+      {
+        "name": "callee",
+        "type": "string"
+      },
+      {
+        "name": "call_id",
+        "type": "string"
+      },
+      {
+        "name": "cseq",
+        "type": "integer"
+      }
+    ]
+  },
+  {
+    "name": "SUBSCRIBE",
+    "template": [
+      "SUBSCRIBE sip:<<destination:string>> SIP/2.0\r\n",
+      "Via: SIP/2.0/UDP <<source_ip:string>>:<<source_port:integer>>\r\n",
+      "From: <<caller:string>>\r\n",
+      "To: <<callee:string>>\r\n",
+      "Call-ID: <<call_id:string>>\r\n",
+      "CSeq: <<cseq:integer>> SUBSCRIBE\r\n",
+      "Max-Forwards: 70\r\n",
+      "Content-Length: 0\r\n",
+      "\r\n"
+    ],
+    "regex": "SUBSCRIBE\\ sip:(.*?)\\ SIP/2\\.0\\\r\\\nVia:\\ SIP/2\\.0/UDP\\ (.*?):(.*?)\\\r\\\nFrom:\\ (.*?)\\\r\\\nTo:\\ (.*?)\\\r\\\nCall\\-ID:\\ (.*?)\\\r\\\nCSeq:\\ (.*?)\\ SUBSCRIBE\\\r\\\nMax\\-Forwards:\\ 70\\\r\\\nContent\\-Length:\\ 0\\\r\\\n\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "destination",
+        "type": "string"
+      },
+      {
+        "name": "source_ip",
+        "type": "string"
+      },
+      {
+        "name": "source_port",
+        "type": "integer"
+      },
+      {
+        "name": "caller",
+        "type": "string"
+      },
+      {
+        "name": "callee",
+        "type": "string"
+      },
+      {
+        "name": "call_id",
+        "type": "string"
+      },
+      {
+        "name": "cseq",
+        "type": "integer"
+      }
+    ]
+  },
+  {
+    "name": "SIP",
+    "template": [
+      "INVITE <<request_uri:string>> SIP/2.0\r\n",
+      "Via: SIP/2.0/UDP <<via_ip:string>>:<<via_port:integer>>\r\n",
+      "From: <<from_address:string>>\r\n",
+      "To: <<to_address:string>>\r\n",
+      "Call-ID: <<call_id:string>>\r\n",
+      "CSeq: <<cseq:integer>> INVITE\r\n",
+      "Max-Forwards: 70\r\n",
+      "User-Agent: <<user_agent:string>>\r\n",
+      "Content-Length: <<content_length:integer>>\r\n",
+      "Content-Type: application/sdp\r\n",
+      "\r\n"
+    ],
+    "regex": "INVITE\\ (.*?)\\ SIP/2\\.0\\\r\\\nVia:\\ SIP/2\\.0/UDP\\ (.*?):(.*?)\\\r\\\nFrom:\\ (.*?)\\\r\\\nTo:\\ (.*?)\\\r\\\nCall\\-ID:\\ (.*?)\\\r\\\nCSeq:\\ (.*?)\\ INVITE\\\r\\\nMax\\-Forwards:\\ 70\\\r\\\nUser\\-Agent:\\ (.*?)\\\r\\\nContent\\-Length:\\ (.*?)\\\r\\\nContent\\-Type:\\ application/sdp\\\r\\\n\\\r\\\n",
+    "placeholders": [
+      {
+        "name": "request_uri",
+        "type": "string"
+      },
+      {
+        "name": "via_ip",
+        "type": "string"
+      },
+      {
+        "name": "via_port",
+        "type": "integer"
+      },
+      {
+        "name": "from_address",
+        "type": "string"
+      },
+      {
+        "name": "to_address",
+        "type": "string"
+      },
+      {
+        "name": "call_id",
+        "type": "string"
+      },
+      {
+        "name": "cseq",
+        "type": "integer"
+      },
+      {
+        "name": "user_agent",
+        "type": "string"
+      },
+      {
+        "name": "content_length",
+        "type": "integer"
+      }
+    ]
+  }
+]

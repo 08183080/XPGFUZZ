@@ -1,0 +1,15 @@
+USER ubuntu
+PASS ubuntu
+SYST
+MKD todeletenow
+XMKD todeletetoo
+LIST
+SMNT /var/ftp/whitespace dir  
+MFF modify;UNIX.group=ftp-users; /todeletenow
+MLST /todeletenow
+RMD todeletenow
+XRMD todeletetoo
+MLST /todeletetoo/verylongdirectoryname_not_real_just_for_fuzzing_and_testing_purposes_to_see_how_the_server_handles_very_long_input_names_that_might_cause_overflow_or_errors_in_some_cases
+MFF modify;UNIX.mode=0777; /very/long/path/with/many/subdirectories/and/levels/that/might/be/unusual/for/normal/operations
+LIST
+QUIT

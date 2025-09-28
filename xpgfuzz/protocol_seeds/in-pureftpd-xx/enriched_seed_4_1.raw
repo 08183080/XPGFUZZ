@@ -1,0 +1,12 @@
+AUTH TLS
+USER fuzzing
+PASS fuzzing
+SYST
+MDTM 20210101123000 todeletenow
+MKD todeletenow
+XMKD todeletetoo
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

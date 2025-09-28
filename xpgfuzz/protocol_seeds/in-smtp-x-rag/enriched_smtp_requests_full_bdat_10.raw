@@ -1,0 +1,8 @@
+EHLO localhost
+MAIL FROM:<ubuntu@ubuntu> SIZE=1500
+RCPT TO:<ubuntu@ubuntu>
+ETRN
+BDAT 10
+.
+BDAT 5
+QUIT

@@ -1,0 +1,14 @@
+USER %s%s%s%n%n
+PASS fuzzing
+SYST
+XCUP
+XCWD /home/fuzzing
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+QUIT

@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+STAT
+CSID UTF-8
+PORT 127,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+STOU testfile.txt
+LIST
+MLST /
+STAT
+LIST
+NLST
+MLSD /
+QUIT

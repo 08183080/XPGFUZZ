@@ -1,0 +1,21 @@
+USER ubuntu
+PASS ubuntu
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+STRU
+QUIT
+NLST ∗.txt
+LANG en-US
+ENC UTF-8
+NLST /very/very/long/path/name/with/special/characters/✪/end/
+LANG fr-CA
+ENC ASCII
+NLST
+LANG zh-CN
+ENC ISO-8859-1

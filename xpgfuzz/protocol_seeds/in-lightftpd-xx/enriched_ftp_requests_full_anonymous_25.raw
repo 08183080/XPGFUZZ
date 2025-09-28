@@ -1,0 +1,9 @@
+USER anonymous
+PASS ubuntu
+FEAT
+SYST
+PWD
+PORT 127,0,0,1,152,193
+MLSD
+LIST
+QUIT

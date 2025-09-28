@@ -1,0 +1,15 @@
+USER ubuntu
+PASS ubuntu
+MKD test
+CWD test
+PWD
+XMKD test2
+XCWD test2
+XPWD
+RMD test
+XRMD test2
+EPRT |1|192.0.2.0|2121|
+CDUP
+XCUP
+PWD
+QUIT

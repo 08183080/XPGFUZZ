@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+MLSD /home/fuzzing
+SITE CHMOD 755 /home/fuzzing
+HELP
+STAT
+STRU
+QUIT

@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+SYST
+MKD test
+CWD test
+PWD
+SIZE testfile.txt
+XMKD test2
+XCWD <script>alert(1)</script>
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

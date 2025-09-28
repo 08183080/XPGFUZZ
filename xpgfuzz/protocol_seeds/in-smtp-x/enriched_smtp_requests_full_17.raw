@@ -1,0 +1,11 @@
+EHLO localhost
+PIPELINING
+MAIL FROM:<ubuntu@ubuntu>
+RCPT TO:<ubuntu@ubuntu>
+VRFY ubuntu@ubuntu
+DATA
+Subject: Test Email
+
+This is a test email.
+.
+QUIT

@@ -1,0 +1,12 @@
+USER fuzzing
+PASS fuzzing
+SYST
+SITE HELP
+MKD todeletenow
+XMKD todeletetoo
+LIST
+STOR file:///dev/null
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

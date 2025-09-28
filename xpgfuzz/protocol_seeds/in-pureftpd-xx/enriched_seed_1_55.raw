@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+STAT
+DELE testfile.txt
+SITE UTIME testfile.txt 20210101123000
+STRU
+QUIT

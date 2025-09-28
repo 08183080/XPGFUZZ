@@ -1,0 +1,13 @@
+USER fuzzing
+PASS fuzzing
+SYST
+PROT P
+MKD todeletenow
+XMKD todeletetoo
+LIST
+ABOR
+RMD todeletenow
+XRMD todeletetoo
+LIST
+ABOR
+QUIT

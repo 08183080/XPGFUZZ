@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+HELP
+RETR /example/file.txt
+SITE HELP
+STAT
+STRU
+QUIT

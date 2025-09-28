@@ -1,0 +1,8 @@
+EHLO localhost
+MAIL FROM:<ubuntu@ubuntu> BODY=8BITMIME
+RCPT TO:<ubuntu@ubuntu> NOTIFY=SUCCESS,FAILURE ORCPT=rfc822;ubuntu@ubuntu
+CHUNKING
+BDAT 3
+abc
+BDAT 0 LAST
+QUIT

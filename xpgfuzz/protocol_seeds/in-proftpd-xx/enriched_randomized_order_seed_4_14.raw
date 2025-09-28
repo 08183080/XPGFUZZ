@@ -1,0 +1,16 @@
+USER ubuntu
+PASS ubuntu
+PBSZ 0
+CONF longfoldername_with_special_$$$£££&&&
+RANG 1-100
+SYST
+MKD todeletenow
+XMKD todeletetoo
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+PBSZ 2048
+CONF anotherconfig
+RANG 100-200
+QUIT

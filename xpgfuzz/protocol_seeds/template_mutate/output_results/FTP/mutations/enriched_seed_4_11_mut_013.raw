@@ -1,0 +1,12 @@
+USER fuzzing
+PASS fuzzing
+SYST
+SITE HELP
+MKD todeletenow
+XMKD todeletetoo
+LIST
+STOR ../../../../../../../../etc/hosts
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

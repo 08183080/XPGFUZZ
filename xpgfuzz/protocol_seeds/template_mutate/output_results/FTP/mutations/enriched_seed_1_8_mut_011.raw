@@ -1,0 +1,15 @@
+USER undefined
+PASS fuzzing
+AUTH TLS
+SYST
+ACCT
+REIN
+SMNT
+FEAT
+NOOP
+RNFR oldfile.txt
+RNTO newfile.txt
+HELP
+STAT
+STRU
+QUIT

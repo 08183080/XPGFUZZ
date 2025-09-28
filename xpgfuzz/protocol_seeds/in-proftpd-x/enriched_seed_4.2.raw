@@ -1,0 +1,12 @@
+USER ubuntu
+PASS ubuntu
+FEAT
+SYST
+HOST example.com
+MKD todeletenow
+XMKD todeletetoo
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

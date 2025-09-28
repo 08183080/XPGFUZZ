@@ -8201,6 +8201,77 @@ havoc_stage:
       // while(!ranges[range_choice].mutable){
       //   range_choice = UR(rc);
       // }
+      /* Optional: invoke template-based fine-grained Python mutator */
+      if (getenv("XPG_TEMPLATE_MUTATE") && atoi(getenv("XPG_TEMPLATE_MUTATE")) == 1 && UR(100) < 5)
+      {
+        /* Prepare input and output temp files */
+        char *tmpl_dir = alloc_printf("%s/template_mutations", out_dir);
+        char *in_tmp = alloc_printf("%s/in-%06u", tmpl_dir, stage_cur);
+        char *out_tmp = alloc_printf("%s/out-%06u", tmpl_dir, stage_cur);
+        char *grammars_path = alloc_printf("%s/%s/protocol-grammars/grammars.json", out_dir, protocol_name);
+
+        /* Write current buffer slice to temp input */
+        int in_fd = open(in_tmp, O_WRONLY | O_CREAT | O_TRUNC, 0600);
+        if (in_fd >= 0)
+        {
+          ck_write(in_fd, out_buf + ranges[range_choice].start, ranges[range_choice].len, in_tmp);
+          close(in_fd);
+
+          /* Build command */
+          char *cmd = alloc_printf("%s -c \"python3 -m xpgfuzz.protocol_seeds.template_mutate.cli_mutate_one --grammars %s --in %s --out %s\"", \
+                                   getenv("SHELL") ? getenv("SHELL") : "/bin/sh", grammars_path, in_tmp, out_tmp);
+
+          /* Fallback for Windows where python may be py */
+#ifdef _WIN32
+          ck_free(cmd);
+          cmd = alloc_printf("py -m xpgfuzz.protocol_seeds.template_mutate.cli_mutate_one --grammars \"%s\" --in \"%s\" --out \"%s\" >NUL 2>&1", grammars_path, in_tmp, out_tmp);
+#else
+          (void)0;
+#endif
+
+          int rc_cmd = system(cmd);
+          (void)rc_cmd;
+
+          /* If output exists, read back and splice into buffer */
+          int out_fd = open(out_tmp, O_RDONLY);
+          if (out_fd >= 0)
+          {
+            s32 new_len;
+            u8 *new_mem = read_file(out_tmp, &new_len);
+            if (new_mem && new_len > 0 && new_len <= MAX_FILE)
+            {
+              /* Replace the chosen range with mutated data; clamp to buffer */
+              u32 max_copy = MIN((u32)new_len, ranges[range_choice].len);
+              memcpy(out_buf + ranges[range_choice].start, new_mem, max_copy);
+              ck_free(new_mem);
+              unlink(in_tmp);
+              unlink(out_tmp);
+              ck_free(tmpl_dir);
+              ck_free(in_tmp);
+              ck_free(out_tmp);
+              ck_free(grammars_path);
+              ck_free(cmd);
+              /* Send testcase */
+              if (common_fuzz_stuff(argv, out_buf, len))
+                goto abandon_entry;
+              continue; /* proceed next stacking op */
+            }
+            if (new_mem)
+              ck_free(new_mem);
+            close(out_fd);
+          }
+
+          /* Cleanup temp files */
+          unlink(in_tmp);
+          unlink(out_tmp);
+        }
+        ck_free(tmpl_dir);
+        ck_free(in_tmp);
+        ck_free(out_tmp);
+        ck_free(grammars_path);
+        /* if we couldn't run, just fall through to normal switch */
+      }
+
       switch (UR(15 + 2 + (region_level_mutation ? 8 : 0)))
       {
 

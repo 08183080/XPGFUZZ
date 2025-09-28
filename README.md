@@ -122,6 +122,27 @@ python finegrained_mutator.py
 - `protocol-grammars/grammars.json`: 提取的协议语法规则
 - 变异文件命名格式: `{原文件名}_mut_{序号}.raw`
 
+
+#### 模板驱动的细粒度变异集成
+
+在`xpgfuzz/afl-fuzz.c`调用基于模板、带类型约束的细粒度变异：
+
+```bash
+# Linux/macOS
+export XPG_TEMPLATE_MUTATE=1
+
+# Windows PowerShell
+$Env:XPG_TEMPLATE_MUTATE = 1
+```
+
+要求：
+- 语法文件位于`out/<protocol_name>/protocol-grammars/grammars.json`（可由内置LLM提取流程生成）。
+- Python 可用：Unix 使用 `python3`；Windows 使用 `py` 启动器。
+
+说明：
+- 该外部变异以约5%的概率在每次havoc堆叠操作中触发，以控制开销。
+- 临时文件写入到 `out/<session>/template_mutations/`，使用后会清理。
+
 ### 3. 协议知识库
 
 XPGfuzz集成了丰富的协议知识库：

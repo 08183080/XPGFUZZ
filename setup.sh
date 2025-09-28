@@ -20,7 +20,7 @@ for subject in ./benchmark/subjects/*/*; do
   cp -r ChatAFL $subject/chatafl
   
   rm -r $subject/xpgfuzz 2>&1 >/dev/null
-  cp -r ChatAFL-CL1 $subject/xpgfuzz
+  cp -r xpgfuzz $subject/xpgfuzz
   
 done;
 
